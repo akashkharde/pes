@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import AboutSectionOne from './Subcomponents/AboutSectionOne';
 import OurVision from './Subcomponents/OurVision';
 import WhyChooseUs from './Subcomponents/WhyChooseUs';
-import Title from '../Componets/Common/Title';
+import Title from '../Components/Common/Title';
 import img from '../Assets/images/about-header.png'
 import { useLocation } from 'react-router-dom';
 import AOS from 'aos';

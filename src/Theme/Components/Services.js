@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Title from '../Componets/Common/Title';
+import Title from '../Components/Common/Title';
 import WhatWeDo from './Subcomponents/WhatWeDo';
 import ServicesList from './Subcomponents/ServicesList';
 import img from '../Assets/images/services-header.png';

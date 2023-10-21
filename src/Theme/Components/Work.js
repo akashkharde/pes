@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import WorkContainer from './Subcomponents/WorkContainer';
-import Title from '../Componets/Common/Title';
+import Title from '../Components/Common/Title';
 import img from '../Assets/images/work-header.png'
 import AOS from 'aos';
 

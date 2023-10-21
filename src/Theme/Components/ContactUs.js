@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Title from '../Componets/Common/Title'
+import Title from '../Components/Common/Title'
 import ContactPage from './Subcomponents/ContactPage';
 import img from '../Assets/images/about-header.png';
 import AOS from 'aos';
