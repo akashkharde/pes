@@ -4,8 +4,13 @@ import * as bs from "react-icons/bs"
 import * as gi from "react-icons/gi"
 import * as fi from "react-icons/fi";
 import * as tb from "react-icons/tb";
+import { useEffect } from "react";
+import AOS from 'aos'
 
 export default function ServicesList() {
+    useEffect(() => {
+        AOS.init({ delay: 300 })
+      }, []);
     return (
         <div>
             <div className="container">

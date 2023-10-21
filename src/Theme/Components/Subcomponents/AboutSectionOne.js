@@ -2,22 +2,25 @@ import * as bs from "react-icons/bs"
 import * as gi from "react-icons/gi"
 import * as fi from "react-icons/fi";
 import * as tb from "react-icons/tb";
+import { useEffect } from "react";
+import AOS from 'aos'
 
 export default function AboutSectionOne() {
-    let totalService = 8;
+    useEffect(() => {
+        AOS.init({ delay: 200 })
+      }, []);
     return (
         <div>
-            <div className="container">
-                <div className="container text-center aboutmain_div">
+            <div className="">
+                <div className=" text-center aboutmain_div">
                     <div className="about-sec-one-text">
                         At PINNACC ENGINEERING SOLUTIONS, we specialize in mechanical design solutions that empower businesses to thrive in a competitive market. With a passion for innovation and a commitment to excellence, we offer a comprehensive suite of designing services tailored to your specific needs.
                     </div>
                 </div>
-                <div className="">
-                    <div className="col-lg-12 col-md-12 col-sm-12" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="600">
-                        <div className="container about-sec-one-right-boxes">
+
+                        <div className="about-sec-one-right-boxes"  >
                             <div className="row service_row_">
-                                    <div className=" col-lg-4 col-md-6 col-sm-12 service_" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
+                                    <div className="col col-lg-4 col-md-6 col-sm-12 service_" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                                         <div className="service-box_">
                                             <div className="service-img_">
                                                 <bs.BsFillGearFill />
@@ -99,8 +102,6 @@ export default function AboutSectionOne() {
                             </div>
 
                         </div>
-                    </div>
-                </div>
             </div>
         </div>
     )

@@ -27,20 +27,20 @@ export default function HomeSlider() {
             <div data-aos="zoom-out-right" className="" >
                 <Carousel styles={styles} infiniteLoop={true} autoPlay={true}>
                     <div>
-                        <img src={img} />
+                        <img src={img}  className="homeSlider" alt='Img'/>
                         <p className="legend">Legend 1</p>
                     </div>
                     <div>
-                        <img src={imgOne} />
+                        <img src={imgOne}  className="homeSlider" alt='Img'/>
                         <p className="legend">Legend 2</p>
                     </div>
                     <div>
-                        <img src={imgTwo} />
+                        <img src={imgTwo}  className="homeSlider" alt='Img'/>
                         <p className="legend">Legend 3</p>
                     </div>
                 </Carousel>
             </div>
-            <div className="home_img_round">
+            <div className="home_img_round"  data-aos="zoom-out-left">
                 <div className="home_img_round_main" >
                     <div className="home__logo_text">
                         <img className="home_img_" src={logo} alt="pinnacc" />

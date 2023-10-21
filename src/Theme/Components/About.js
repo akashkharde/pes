@@ -9,11 +9,9 @@ import AOS from 'aos';
 
 
 function About() {
-
-
 useEffect(() => {
   AOS.init({ delay: 200 })
-}, [])
+}, []);
 const [shouldScrollToTop, setShouldScrollToTop] = useState(true);
 
 useEffect(() => {

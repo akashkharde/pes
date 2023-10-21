@@ -13,21 +13,20 @@ import { useLocation } from 'react-router-dom';
 
 
 function Home() {
-const {location} = useLocation();
   useEffect(() => {
-    AOS.init({ delay: 200 })
-  }, [])
+    AOS.init({ delay: 300 })
+  }, []);
   const [shouldScrollToTop, setShouldScrollToTop] = useState(true);
   useEffect(() => {
     if (shouldScrollToTop) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        setShouldScrollToTop(false);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setShouldScrollToTop(false);
     }
-}, [shouldScrollToTop]);
+  }, [shouldScrollToTop]);
   return (
     <div>
-      <section>
-      <HomeSlider />
+      <section className=''>
+        <HomeSlider />
       </section>
       <section title="PES About">
         <Title textone={"About Us"} />

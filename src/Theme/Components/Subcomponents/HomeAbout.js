@@ -1,6 +1,12 @@
 import {Link, useNavigate} from 'react-router-dom';
-import img from '../../Assets/images/about-rectangle.png'
+import img from '../../Assets/images/about-rectangle.png';
+import AOS from 'aos'
+import { useEffect } from 'react';
 export default function HomeAbout() {
+    useEffect(() => {
+        AOS.init({ delay: 300 })
+      }, []);
+
     const navigate = useNavigate();
     const handleNavigate = () =>{
         navigate("/about",{state:{ pageNo:2}})

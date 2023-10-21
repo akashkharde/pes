@@ -84,6 +84,8 @@ body {
   margin: 0;
   padding: 0;
   min-width: auto;
+  scroll-behavior: smooth;
+
 }
 
 .clear {
@@ -103,6 +105,40 @@ a {
 img {
   /* height: auto; */
   width: 100%;
+}
+
+.homeSlider {
+  height: 87vh;
+  width: auto;
+  object-fit: contain;
+  background-position: center;
+  object-position: center;
+  background: no-repeat;
+}
+
+.carousel .control-dots .dot {
+  transition: opacity .25s ease-in;
+  opacity: .3;
+  filter: alpha(opacity=30);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  background: #000;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.carousel.carousel-slider .control-arrow {
+  top: 40%;
+  color: black;
+  font-size: 26px;
+  margin-top: 0;
+  padding: 5px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) !important;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 img.workimage {
@@ -242,6 +278,7 @@ nav.col.nav_col_main {
   padding: 5px 10px;
   border-radius: 5px;
   width: fit-content;
+  border: 1px solid #e1c6c6;
 }
 
 .home_img_round_text {
@@ -495,6 +532,7 @@ ul.footer-quick-links li {
   margin: 0 auto;
   font-family: ui-monospace, sans-serif;
 }
+
 .pixie-experience {
   background-image: url(../Assets/images/experience-bg.png);
   background-size: auto 100%;
@@ -505,6 +543,7 @@ ul.footer-quick-links li {
   height: 200px;
   position: relative;
 }
+
 .pixie-exp {
   width: 150px;
   position: absolute;
@@ -516,6 +555,7 @@ ul.footer-quick-links li {
   color: var(--graylight);
   font-size: 12px;
 }
+
 .experience-number {
   font-size: 25px;
   text-align: center;
@@ -528,19 +568,23 @@ ul.footer-quick-links li {
   left: 65px;
   font-family: ui-monospace, sans-serif;
 }
+
 .pixie-exp.exp2 {
   top: 40px;
   left: 272px;
-  font-family: ui-monospace, sans-serif; 
+  font-family: ui-monospace, sans-serif;
 }
+
 .pixie-exp.exp3 {
   top: 40px;
   right: 275px;
 }
+
 .pixie-exp.exp4 {
   top: 40px;
   right: 58px;
 }
+
 section.section-secondary-bg {
   background-color: var(--sectionbg);
   padding: 10px 0 50px 0;
@@ -769,8 +813,9 @@ input.op__checkbox {
 }
 
 .buttons_mobileview {
-   white-space: nowrap;
+  white-space: nowrap;
 }
+
 .our-work-content {
   font-size: 16px;
   font-family: ui-monospace, sans-serif;
@@ -1223,14 +1268,14 @@ input.op__checkbox {
 
 .service_ {
   background-color: var(--white);
-  padding: 30px 20px;
   border-radius: 5px;
   box-shadow: 6px 5px 13px -10px var(--black);
   position: relative;
   overflow: hidden;
-  margin: 10px 12spx;
+  width:29.33%;
+  margin: 2% 2%;
+  padding: 30px 20px;
   border: 1px solid #d5cdcd;
-  width: 31%;
 }
 
 img.LifeAtPse_logo {
@@ -1241,6 +1286,7 @@ img.LifeAtPse_logo {
   justify-content: center;
   margin-top: 24px;
 }
+
 .service_row_ {
   margin: 30px 0px;
 }
@@ -1450,10 +1496,11 @@ img.LifeAtPse_logo {
   border-radius: 50%;
   height: 155px;
 }
+
 img.LifeAtPse_logo {
   height: 76px;
   width: 150px;
-  margin:  3px 41px 3px;
+  margin: 3px 41px 3px;
 }
 
 .life-at-pixie-small-image img {
