@@ -84,7 +84,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: auto;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 
 }
 
@@ -140,6 +140,12 @@ img {
   height: -moz-fit-content;
   height: fit-content;
 }
+
+/* @media only screen and (max-width: 600px) {
+  .carousel-wrapper{
+    max-width: 100% !important;
+  }
+} */
 
 img.workimage {
   height: 250px;
