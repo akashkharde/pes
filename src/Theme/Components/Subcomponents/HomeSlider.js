@@ -25,7 +25,7 @@ export default function HomeSlider() {
     return (
         <>
             <div data-aos="zoom-out-right" className="" >
-                <Carousel styles={styles} infiniteLoop={true} autoPlay={true}>
+                <Carousel styles={styles} infiniteLoop={true} autoPlay={false}>
                     <div>
                         <img src={img}  className="homeSlider" alt='Img'/>
                         <p className="legend">Legend 1</p>
@@ -40,8 +40,8 @@ export default function HomeSlider() {
                     </div>
                 </Carousel>
             </div>
-            <div className="home_img_round"  data-aos="zoom-out-left">
-                <div className="home_img_round_main" >
+            <div className="home_img_round"  >
+                <div className="home_img_round_main" data-aos="zoom-out-right" >
                     <div className="home__logo_text">
                         <img className="home_img_" src={logo} alt="pinnacc" />
                         <span className="home_img_round_text">Elevate Your Design with Pinnac Engineering Solutions</span>

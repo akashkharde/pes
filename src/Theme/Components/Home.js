@@ -23,8 +23,9 @@ function Home() {
       setShouldScrollToTop(false);
     }
   }, [shouldScrollToTop]);
+
   return (
-    <div>
+    <div style={{width:"100%"}}>
       <section className=''>
         <HomeSlider />
       </section>

@@ -131,7 +131,7 @@ img {
 }
 
 .carousel.carousel-slider .control-arrow {
-  top: 40%;
+  top: 40% !important;
   color: black;
   font-size: 26px;
   margin-top: 0;
