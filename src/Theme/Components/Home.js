@@ -14,7 +14,7 @@ import { useLocation } from 'react-router-dom';
 
 function Home() {
   useEffect(() => {
-    AOS.init({ delay: 300 })
+    AOS.init({ delay: 200 })
   }, []);
   const [shouldScrollToTop, setShouldScrollToTop] = useState(true);
   useEffect(() => {

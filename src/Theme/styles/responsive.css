@@ -397,6 +397,18 @@
   .service_ {
     width: 45.33% !important;
   }
+  .homeSlider {
+    height: 80vh;
+  }
+  .home_img_round_main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home__logo_text {
+    width: 80%;
+  }
 
   .header-menu ul li {
     float: none !important;
@@ -813,17 +825,20 @@
     top: 72%;
   }
 }
+
 @media only screen and (min-width: 500px) and (max-width: 600px) {
   .service_ {
     width: 45.33% !important;
   }
 }
+
 @media only screen and (min-width: 200px) and (max-width: 500px) {
   .service_ {
     width: 95% !important;
     margin: 10px 20px;
   }
 }
+
 @media only screen and (min-width: 400px) and (max-width: 600px) {
   .cards__container {
     width: 400px;
@@ -840,6 +855,7 @@
   .pixie-experince1 {
     display: block;
   }
+
   .header_icon_name {
     color: #fff;
   }
