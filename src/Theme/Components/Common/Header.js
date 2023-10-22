@@ -14,11 +14,8 @@ function Header() {
     }
   }
   useEffect(() =>{
-    if(path !== "/"  ) {
-      setIsChecked(!isChecked)
-    }
+      setIsChecked(false)
   },[path])
-  console.log(isChecked);
   return (
     <header>
       <div className='main-header'>

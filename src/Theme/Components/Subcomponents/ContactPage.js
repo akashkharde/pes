@@ -59,7 +59,7 @@ export default function ContactPage() {
         country: "",
         website: "",
         description: "",
-        descriptiontext: '',
+        selectedOptionList: '',
     });
     const sendEmail = async (e) => {
         e.preventDefault();
@@ -103,6 +103,7 @@ export default function ContactPage() {
                     .then((result) => {
                         if (result.status == 200) {
                             setSuccessMessage("We've received you message will contact you within 48 hours. Thank You.");
+                            setSelectedOptions([]);
                             setTimeout(() => setSuccessMessage(""), 5000);
                             setData({
                                 name: "",
@@ -123,6 +124,7 @@ export default function ContactPage() {
             }
         }
     };
+    console.log("^^^^^^^^^^^^^6", selectedOptions);
     return (
         <div className="contact-container">
             <div className="container">
@@ -186,7 +188,7 @@ export default function ContactPage() {
                                             type="text"
                                             placeholder="*Email Address"
                                             value={data.email}
-                                            name="user_name"
+                                            name="from_email"
                                             onChange={(e) =>
                                                 setData({ ...data, email: e.target.value })
                                             }
@@ -200,6 +202,7 @@ export default function ContactPage() {
                                             onChange={(e) =>
                                                 setData({ ...data, mobilenumber: e.target.value })
                                             }
+                                            name="from_contact"
                                         />
                                         <input
                                             type="text"
@@ -226,7 +229,7 @@ export default function ContactPage() {
                                             type="text"
                                             placeholder="country"
                                             value={data.country}
-                                            name="user_name"
+                                            name="country"
                                             onChange={(e) =>
                                                 setData({ ...data, country: e.target.value })
                                             }
@@ -249,6 +252,8 @@ export default function ContactPage() {
                                                                     isOptionSelected(item.op) ? handleRemoveFromList(item.op) : handleAddToList(item.op);
                                                                 }}
                                                                 checked={isOptionSelected(item.op)}
+                                                                name="message_selectedlist"
+                                                                value={selectedOptions}
                                                             />
                                                             <span>{item.op}</span>
                                                         </div>
@@ -266,8 +271,8 @@ export default function ContactPage() {
                                         </div>
                                         <textarea
                                             placeholder="*How can we help?"
-                                            value={data.descriptiontext}
-                                            onChange={(e) => setData({ ...data, descriptiontext: e.target.value })}
+                                            value={data.description}
+                                            onChange={(e) => setData({ ...data, description: e.target.value })}
                                             name="message"
                                         />
                                     </div>
@@ -286,8 +291,6 @@ export default function ContactPage() {
                                     </div>
                                 </div>
                             </form>
-
-
                             <div className="clear"></div>
                         </div>
                     </div>

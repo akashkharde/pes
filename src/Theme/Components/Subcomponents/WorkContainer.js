@@ -47,14 +47,22 @@ import other5 from "../../Assets/design/structural1.1.jpg"
 export default function WorkContainer(props) {
     const location = useLocation();
     const { no } = location.state || {};
-    const showTabRef = useRef();
     const [showWork, setShowWork] = useState(1);
+    const showTabRef = useRef(null);
+
     useEffect(() => {
-        if (no && showTabRef.current) {
-            showTabRef.current.scrollIntoView({ behavior: "smooth" }); // Corrected property name
-            setShowWork(no);
+      if (showTabRef.current) {
+        const activeButton = showTabRef.current.querySelector('.active');
+        if (activeButton) {
+          const containerWidth = showTabRef.current.clientWidth;
+          const activeButtonWidth = activeButton.offsetWidth;
+          const activeButtonLeft = activeButton.offsetLeft;
+          const scrollLeft = activeButtonLeft - (containerWidth - activeButtonWidth) / 2;  
+          showTabRef.current.scrollLeft = scrollLeft;
         }
-    }, []);
+      }
+      setShowWork(no)
+    }, [showWork]);
 
     const handleClick = (index) => {
         setShowWork(index)
