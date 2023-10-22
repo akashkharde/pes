@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import * as Bs from 'react-icons/bs'
 import CF1 from "../../Assets/design/CF1.1.jpg";
 import CF2 from "../../Assets/design/CF2.1.jpg";
@@ -45,8 +45,17 @@ import other5 from "../../Assets/design/structural1.1.jpg"
 
 
 export default function WorkContainer(props) {
-    const [showWork, setShowWork] = useState(1)
-    const totalProjects = props.totalProject
+    const location = useLocation();
+    const { no } = location.state || {};
+    const showTabRef = useRef();
+    const [showWork, setShowWork] = useState(1);
+    useEffect(() => {
+        if (no && showTabRef.current) {
+            showTabRef.current.scrollIntoView({ behavior: "smooth" }); // Corrected property name
+            setShowWork(no);
+        }
+    }, []);
+
     const handleClick = (index) => {
         setShowWork(index)
     }
@@ -67,10 +76,10 @@ export default function WorkContainer(props) {
                     </div>
                 </div>
 
-                <div className="work-button-container">
+                <div className="work-button-container" >
                     <div className="work-button nav-pills align-item-center d-flex justify-content-center" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="600"
                         id="pills-tab" role="tablist" >
-                        <div className='buttons_mobileview'>
+                        <div className='buttons_mobileview' ref={showTabRef}>
                             <button className={`workBtn ${showWork === 1 ? "active" : ''}`} id="pills-0-tab" data-bs-toggle="pill" data-bs-target="#pills-0" type="button" role="tab" aria-controls="pills-0" aria-selected="true" onClick={() => handleClick(1)}> FIXTURE DESIGN</button>
                             <button className={`workBtn ${showWork === 2 ? "active" : ''}`} id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="false" onClick={() => handleClick(2)}>   PRESS TOOL DESIGN</button>
                             <button className={`workBtn ${showWork === 3 ? "active" : ''}`} id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false" onClick={() => handleClick(3)}>   FORGING TOOL DESIGN</button>
@@ -84,7 +93,7 @@ export default function WorkContainer(props) {
                     <div className="border-inside-border"></div>
                 </div>
 
-                <div className="projects-section tab-content" id="pills-tabContent">
+                <div className="projects-section tab-content" id="pills-tabContent" >
                     {showWork === 1 &&
                         <div className="projects-section">
                             <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">

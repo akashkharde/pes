@@ -847,12 +847,14 @@ input.op__checkbox {
   background-color: var(--white);
   border: 1px solid var(--primary);
   color: var(--primary);
-  padding: 10px;
+  padding: 4px 7px; 
   border-radius: 25px;
   margin-right: 13px;
   transition: background-color 0.8s, color 0.8s;
   white-space: nowrap;
   margin-bottom: 20px !important;
+  font-size: 13px;
+    font-weight: 600;
 }
 
 .work-button button:hover {
@@ -1243,18 +1245,17 @@ input.op__checkbox {
   font-size: 25px;
   width: 600px;
   font-family: ui-monospace, sans-serif;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .our-vision-tabs {
   margin: 0 auto;
-  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
 
 .our-vision-tab {
-  border: 1px solid #F4F0F0;
+  border: 1px solid #cec9c9;
   padding: 25px 20px;
   margin: 1%;
   background-color: var(--white);
@@ -1262,7 +1263,6 @@ input.op__checkbox {
   position: relative;
   /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   box-shadow: rgb(204, 219, 232) 3px 3px 6px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-  height: 195px;
 }
 
 .vision-title {
@@ -1314,26 +1314,33 @@ img.LifeAtPse_logo {
   font-size: 21px;
   border-radius: 5px;
   color: var(--white);
+  position: relative;
+    top: -30px;
+    left: -20px;
 
 }
 
 
 .service-title_ {
-  margin-top: 20px;
+  margin-top: -15px;
   font-size: 18px;
   font-family: ui-monospace, sans-serif;
   align-items: center;
   display: flex;
   justify-content: center;
+  white-space: nowrap;
 }
 
 .service-content_ {
   margin-top: 10px;
   font-family: ui-monospace, sans-serif;
   font-size: 15px;
-  text-align: center;
+  text-align: justify;
 }
-
+p.why-choose-us_p {
+  padding: 0px 15px;
+  text-align: justify;
+}
 .service_::before {
   content: "";
   position: absolute;
@@ -1367,15 +1374,15 @@ img.LifeAtPse_logo {
   top: -20px;
   height: 40px;
   width: 40px;
-  background-image: url('../Assets/images/number-bg.png');
+  background-color: #000;
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
   line-height: 40px;
   font-family: ui-monospace, sans-serif;
-  ;
-  color: var(--primary);
+  color: #ffffff;
   font-size: 16px;
+  border-radius: 10px;
 }
 
 .our-mission-tabs {

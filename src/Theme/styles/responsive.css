@@ -395,7 +395,7 @@
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .service_row_ {
-    margin: 30px 30px;
+    margin: 10px 20px 30px 20px;
     justify-content: center;
 }
   .service_ {
@@ -671,8 +671,7 @@
 
   .our-vision-tabs {
     float: none;
-    margin-left: 20px;
-    margin-right: 20px;
+
   }
 
   .our-vision-tab {
@@ -837,7 +836,7 @@
     margin-bottom: 20px;
   }
   .service_row_ {
-    margin: 10px 30px 30px 30px;
+    margin: 10px 20px 30px 20px;
     justify-content: center;
 }
 }
@@ -848,7 +847,7 @@
     margin-bottom: 25px;
   }
   .service_row_ {
-    margin: 30px 30px;
+    margin: 10px 20px 30px 20px;
     justify-content: center;
 }
   .home_img_round_main {
@@ -1200,8 +1199,6 @@
 
   .our-vision-tabs {
     display: block;
-    margin-right: 20px;
-    margin-left: 20px;
   }
 
   .our-vision-tab {

@@ -11,7 +11,7 @@ export default function WhyChooseUs(){
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12"  data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
-                        <p>
+                        <p className='why-choose-us_p'>
                             With our extensive expertise and abundant resources, we are well-equipped to
                             assist you in designing new products or enhancing existing ones. Our team of
                             professionals possesses the necessary knowledge and skills to tackle complex

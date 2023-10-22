@@ -1,7 +1,4 @@
 import * as bs from "react-icons/bs"
-import * as gi from "react-icons/gi"
-import * as fi from "react-icons/fi";
-import * as tb from "react-icons/tb";
 import { useEffect } from "react";
 import AOS from 'aos'
 
@@ -11,7 +8,7 @@ export default function AboutSectionOne() {
       }, []);
     return (
         <div>
-            <div className="">
+            <div className="container">
                 <div className=" text-center aboutmain_div">
                     <div className="about-sec-one-text">
                         At PINNACC ENGINEERING SOLUTIONS, we specialize in mechanical design solutions that empower businesses to thrive in a competitive market. With a passion for innovation and a commitment to excellence, we offer a comprehensive suite of designing services tailored to your specific needs.
@@ -23,7 +20,7 @@ export default function AboutSectionOne() {
                                     <div className="col col-lg-4 col-md-6 col-sm-12 service_" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                                         <div className="service-box_">
                                             <div className="service-img_">
-                                                <bs.BsFillGearFill />
+                                                <bs.BsFillGearFill style={{color:"#000"}} />
                                             </div>
                                             <div className="service-title_">
                                                 FIXTURE DESIGN
@@ -37,7 +34,7 @@ export default function AboutSectionOne() {
                                 <div className="col-lg-4 col-md-6 col-sm-12 service_"  data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600"> 
                                     <div className="service-box_">
                                         <div className="service-img_">
-                                            <bs.BsFillGearFill />
+                                           <bs.BsFillGearFill style={{color:"#000"}} />
                                         </div>
                                         <div className="service-title_">
                                             FORGING TOOL DESIGN
@@ -50,7 +47,7 @@ export default function AboutSectionOne() {
                                 <div className=" col-lg-4 col-md-6 col-sm-12 service_"  data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                                     <div className="service-box_">
                                         <div className="service-img_">
-                                            <bs.BsFillGearFill />
+                                           <bs.BsFillGearFill style={{color:"#000"}} />
                                         </div>
                                         <div className="service-title_">
                                             PRESS TOOL DESIGN
@@ -63,7 +60,7 @@ export default function AboutSectionOne() {
                                 <div className=" col-lg-4 col-md-6 col-sm-12 service_"data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                                     <div className="service-box_">
                                         <div className="service-img_">
-                                            <bs.BsFillGearFill />
+                                           <bs.BsFillGearFill style={{color:"#000"}} />
                                         </div>
                                         <div className="service-title_">
                                             PRODUCT DESIGN
@@ -76,7 +73,7 @@ export default function AboutSectionOne() {
                                 <div className=" col-lg-4 col-md-6 col-sm-12 service_"data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                                     <div className="service-box_">
                                         <div className="service-img_">
-                                            <bs.BsFillGearFill />
+                                           <bs.BsFillGearFill style={{color:"#000"}} />
                                         </div>
                                         <div className="service-title_">
                                             STRUCTURAL DESIGN
@@ -89,7 +86,7 @@ export default function AboutSectionOne() {
                                 <div className=" col-lg-4 col-md-6 col-sm-12 service_"data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                                     <div className="service-box_">
                                         <div className="service-img_">
-                                            <bs.BsFillGearFill />
+                                           <bs.BsFillGearFill style={{color:"#000"}} />
                                         </div>
                                         <div className="service-title_">
                                             PACKAGING DESIGN
