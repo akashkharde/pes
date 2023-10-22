@@ -25,7 +25,7 @@ export default function HomeSlider() {
     return (
         <>
             <div data-aos="zoom-out-right" className="" >
-                <Carousel styles={styles} infiniteLoop={true} autoPlay={false} preventMovementUntilSwipeScrollTolerance={true} swipeScrollTolerance={50} >
+                <Carousel styles={styles} infiniteLoop={true} autoPlay={true} preventMovementUntilSwipeScrollTolerance={true} swipeScrollTolerance={50} >
                     <div>
                         <img src={img} className="homeSlider" alt='Img' />
                         <p className="legend">Legend 1</p>

@@ -394,6 +394,10 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+  .service_row_ {
+    margin: 30px 30px;
+    justify-content: center;
+}
   .service_ {
     width: 45.33% !important;
   }
@@ -830,14 +834,23 @@
 @media only screen and (min-width: 500px) and (max-width: 600px) {
   .service_ {
     width: 45.33% !important;
+    margin-bottom: 20px;
   }
+  .service_row_ {
+    margin: 10px 30px 30px 30px;
+    justify-content: center;
+}
 }
 
 @media only screen and (min-width: 200px) and (max-width: 500px) {
   .service_ {
     width: 95% !important;
-    margin: 10px 20px;
+    margin-bottom: 25px;
   }
+  .service_row_ {
+    margin: 30px 30px;
+    justify-content: center;
+}
   .home_img_round_main {
     align-items: center;
     display: flex;
