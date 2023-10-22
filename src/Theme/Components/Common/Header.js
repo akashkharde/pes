@@ -6,7 +6,19 @@ import logo from '../../Assets/images/PES-3-.png'
 function Header() {
   const location = useLocation();
   const path = location.pathname;
+  const [isChecked , setIsChecked] = useState(false)
 
+  const handleChange = () => {
+    if(path){
+      setIsChecked(!isChecked)
+    }
+  }
+  useEffect(() =>{
+    if(path !== "/"  ) {
+      setIsChecked(!isChecked)
+    }
+  },[path])
+  console.log(isChecked);
   return (
     <header>
       <div className='main-header'>
@@ -18,13 +30,13 @@ function Header() {
               </Link>
             </div>
           </div>
-          <input type="checkbox" name="" id="" />
+          <input type="checkbox" onChange={handleChange} checked={isChecked} name="" id="" />
           <div className="hamburger-lines">
             <span className="line line1"></span>
             <span className="line line2"></span>
             <span className="line line3"></span>
           </div>
-          <div className='header-menu float-end menuPosition'>
+          <div className='header-menu float-end menuPosition  '>
 
             <nav className='col nav_col_main'>
               <Link to={'/'}>
@@ -58,29 +70,6 @@ function Header() {
                 </button>
               </Link>
             </nav>
-
-
-
-            {/* <nav className='col nav_col_main'>
-              <button className={`col header_icon_sub_div  ${path === '/' ? 'active' : ''}`} onClick={() => handleNavclick(1)} >
-                <span className="header_icon_name">Home</span>
-              </button>
-              <button className={`col header_icon_sub_div ${path === "/about" ? 'active' : ''}`} onClick={() => handleNavclick(2)}>
-                <span className="header_icon_name">About Us</span>
-              </button>
-              <button className={` col header_icon_sub_div ${path === "/service" ? 'active' : ''}`} onClick={() => handleNavclick(3)}>
-                <span className="header_icon_name">Services</span>
-              </button>
-              <button className={` col header_icon_sub_div ${path === "/work" ? 'active' : ''}`} onClick={() => handleNavclick(4)}>
-                <span className="header_icon_name">Work</span>
-              </button>
-              <button className={` col header_icon_sub_div ${path === "/lifeAtPSE" ? 'active' : ''}`} onClick={() => handleNavclick(5)}>
-                <span className="header_icon_name">Life At PES</span>
-              </button>
-              <button className={`col header_icon_sub_div ${path === '/contact' ? 'active' : ''}`} onClick={() => handleNavclick(6)}>
-                <span className="header_icon_name">Contact Us</span>
-              </button>
-            </nav> */}
           </div>
           <div className="clear"></div>
         </div>
