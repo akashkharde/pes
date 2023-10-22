@@ -124,7 +124,6 @@ export default function ContactPage() {
             }
         }
     };
-    console.log("^^^^^^^^^^^^^6", selectedOptions);
     return (
         <div className="contact-container">
             <div className="container">

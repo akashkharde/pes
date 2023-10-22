@@ -61,12 +61,15 @@ export default function WorkContainer(props) {
           showTabRef.current.scrollLeft = scrollLeft;
         }
       }
-      setShowWork(no)
+      if(no){
+        setShowWork(no)
+      }
     }, [showWork]);
 
     const handleClick = (index) => {
         setShowWork(index)
     }
+    console.log("showWork", showWork);
     return (
         <div className='work-inner-page-container'>
             <div className="container">
