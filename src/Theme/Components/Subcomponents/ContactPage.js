@@ -5,6 +5,10 @@ import * as Bs from "react-icons/bs";
 import * as Ti from "react-icons/ti";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
+import img from '../../Assets/images/location.png';
+import imgOne from '../../Assets/images/mail.png';
+import imgTwo from '../../Assets/images/assist.png';
+
 
 
 export default function ContactPage() {
@@ -143,7 +147,7 @@ export default function ContactPage() {
                             <div className="contact-detail" >
                                 <div className="details" style={{ cursor: "pointer" }} onClick={handleRedirect}>
                                     <div>
-                                        <img src={"assets/images/location.png"} />
+                                        <img src={img} />
                                     </div>
                                     <div className="address">
                                         Mahavir Residency, 624, Spine Rd, Shivatej Nagar,
@@ -152,13 +156,13 @@ export default function ContactPage() {
                                 </div>
                                 <div className="details">
                                     <div>
-                                        <img src={"assets/images/assist.png"} />
+                                        <img src={imgTwo} />
                                     </div>
                                     <div className="call">Phone: +91 95118 90599</div>
                                 </div>
                                 <div className="details">
                                     <div>
-                                        <img src={"assets/images/mail.png"} />
+                                        <img src={imgOne} />
                                     </div>
                                     <div className="call">Email: design1pinnac.@gmail.com</div>
                                 </div>
