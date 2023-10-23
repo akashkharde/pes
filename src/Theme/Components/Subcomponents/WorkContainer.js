@@ -47,29 +47,25 @@ import other5 from "../../Assets/design/structural1.1.jpg"
 export default function WorkContainer(props) {
     const location = useLocation();
     const { no } = location.state || {};
-    const [showWork, setShowWork] = useState(1);
+    const [showWork, setShowWork] = useState(no);
     const showTabRef = useRef(null);
 
     useEffect(() => {
-      if (showTabRef.current) {
-        const activeButton = showTabRef.current.querySelector('.active');
-        if (activeButton) {
-          const containerWidth = showTabRef.current.clientWidth;
-          const activeButtonWidth = activeButton.offsetWidth;
-          const activeButtonLeft = activeButton.offsetLeft;
-          const scrollLeft = activeButtonLeft - (containerWidth - activeButtonWidth) / 2;  
-          showTabRef.current.scrollLeft = scrollLeft;
+        if (showTabRef.current && showWork !== null) {
+          const activeButton = showTabRef.current.querySelector(`[data-index="${showWork}"]`);
+          if (activeButton) {
+            const containerWidth = showTabRef.current.clientWidth;
+            const activeButtonWidth = activeButton.offsetWidth;
+            const activeButtonLeft = activeButton.offsetLeft;
+            const scrollLeft = activeButtonLeft - (containerWidth - activeButtonWidth) / 2;
+            showTabRef.current.scrollLeft = scrollLeft;
+          }
         }
-      }
-      if(no){
-        setShowWork(no)
-      }
-    }, [showWork]);
-
-    const handleClick = (index) => {
-        setShowWork(index)
-    }
-    console.log("showWork", showWork);
+      }, [showWork]);
+    
+      const handleClick = (index) => {
+        setShowWork(index);
+      };
     return (
         <div className='work-inner-page-container'>
             <div className="container">
@@ -91,12 +87,12 @@ export default function WorkContainer(props) {
                     <div className="work-button nav-pills align-item-center d-flex justify-content-center" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="600"
                         id="pills-tab" role="tablist" >
                         <div className='buttons_mobileview' ref={showTabRef}>
-                            <button className={`workBtn ${showWork === 1 ? "active" : ''}`} id="pills-0-tab" data-bs-toggle="pill" data-bs-target="#pills-0" type="button" role="tab" aria-controls="pills-0" aria-selected="true" onClick={() => handleClick(1)}> FIXTURE DESIGN</button>
-                            <button className={`workBtn ${showWork === 2 ? "active" : ''}`} id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="false" onClick={() => handleClick(2)}>   PRESS TOOL DESIGN</button>
-                            <button className={`workBtn ${showWork === 3 ? "active" : ''}`} id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false" onClick={() => handleClick(3)}>   FORGING TOOL DESIGN</button>
-                            <button className={`workBtn ${showWork === 4 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(4)}>MOLD DESIGN</button>
-                            <button className={`workBtn ${showWork === 5 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(5)}>PACKAGING DESIGN</button>
-                            <button className={`workBtn ${showWork === 6 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(6)}>OTHERS</button>
+                            <button  data-index={1}  className={`workBtn ${showWork === 1 ? "active" : ''}`} id="pills-0-tab" data-bs-toggle="pill" data-bs-target="#pills-0" type="button" role="tab" aria-controls="pills-0" aria-selected="true" onClick={() => handleClick(1)}> FIXTURE DESIGN</button>
+                            <button  data-index={2}  className={`workBtn ${showWork === 2 ? "active" : ''}`} id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="false" onClick={() => handleClick(2)}>   PRESS TOOL DESIGN</button>
+                            <button  data-index={3}  className={`workBtn ${showWork === 3 ? "active" : ''}`} id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false" onClick={() => handleClick(3)}>   FORGING TOOL DESIGN</button>
+                            <button  data-index={4}  className={`workBtn ${showWork === 4 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(4)}>MOLD DESIGN</button>
+                            <button  data-index={5}  className={`workBtn ${showWork === 5 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(5)}>PACKAGING DESIGN</button>
+                            <button  data-index={6}  className={`workBtn ${showWork === 6 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(6)}>OTHERS</button>
                         </div>
                     </div>
                 </div>
