@@ -47,7 +47,7 @@ import other5 from "../../Assets/design/structural1.1.jpg"
 export default function WorkContainer(props) {
     const location = useLocation();
     const { no } = location.state || {};
-    const [showWork, setShowWork] = useState(no);
+    const [showWork, setShowWork] = useState(no ? no : 1);
     const showTabRef = useRef(null);
 
     useEffect(() => {
