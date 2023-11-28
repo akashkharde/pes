@@ -44,7 +44,7 @@ export default function HomeSlider() {
                 <div className="home_img_round_main" data-aos="zoom-out-right" >
                     <div className="home__logo_text">
                         <img className="home_img_" src={logo} alt="pinnacc" />
-                        <span className="home_img_round_text">Elevate Your Design with Pinnac Engineering Solutions</span>
+                        <span className="home_img_round_text">Elevate Your Design with Pinnac  Solutions</span>
                     </div>
                 </div>
             </div>

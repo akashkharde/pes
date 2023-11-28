@@ -34,7 +34,6 @@ function Header() {
             <span className="line line3"></span>
           </div>
           <div className='header-menu float-end menuPosition  '>
-
             <nav className='col nav_col_main'>
               <Link to={'/'}>
                 <button className={`col header_icon_sub_div  ${path === '/' ? 'active' : ''}`}  >
