@@ -8,6 +8,7 @@ import Title from "./Common/Title";
 import ServicesList from './Subcomponents/ServicesList';
 import HomeWork from './Subcomponents/HomeWork';
 import { useLocation } from 'react-router-dom';
+import WorkFlow from './Subcomponents/WorkFlow';
 
 
 
@@ -29,17 +30,22 @@ function Home() {
       <section className=''>
         <HomeSlider />
       </section>
-      <section title="PES About">
+      <section title="PNAQ About">
         <Title textone={"About Us"} />
         <HomeAbout />
       </section>
 
-      <section className="section-secondary-bg" title="PSE Our Services">
+      <section title="PNAQ Work Flow">
+        <Title textone={"Work Flow"} />
+        <WorkFlow />
+      </section>
+
+      <section className="section-secondary-bg" title="PNAQ Services">
         <Title textone={"Our Services"} />
         <ServicesList />
       </section>
 
-      <section title="PES Our Work">
+      <section title="PNAQ Our Work">
         <Title textone={"Our Work"} />
         <HomeWork totalProject={3} />
       </section>

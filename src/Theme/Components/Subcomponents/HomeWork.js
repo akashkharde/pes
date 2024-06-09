@@ -34,10 +34,14 @@ export default function HomeWork() {
                             <button>FIXTURE DESIGN</button>
                             <button  onClick={() =>handleWorkRouting(2)}>PRESS TOOL DESIGN</button>
                             <button  onClick={() =>handleWorkRouting(3)}>FORGING TOOL DESIGN</button>
-                            {/* <button  onClick={() =>handleWorkRouting(4)}>PRODUCT DESIGN</button> */}
                             <button  onClick={() =>handleWorkRouting(4)}>MOLD DESIGN</button>
                             <button  onClick={() =>handleWorkRouting(5)}>PACKAGING DESIGN</button>
-                            <button  onClick={() =>handleWorkRouting(6)}>OTHERS</button>
+                            <button  onClick={() =>handleWorkRouting(6)}>MATERIAL HANDELING EQUIBMENT</button>
+                            <button  onClick={() =>handleWorkRouting(7)}>SPM</button>
+                            <button  onClick={() =>handleWorkRouting(8)}>2D TO 3D</button>
+                            <button  onClick={() =>handleWorkRouting(9)}>CAD DRAFTING AND DESIGN</button>
+
+
 
                         </div>
 

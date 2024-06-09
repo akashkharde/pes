@@ -11,7 +11,7 @@ export default function AboutSectionOne() {
             <div className="container">
                 <div className=" text-center aboutmain_div">
                     <div className="about-sec-one-text">
-                        At PINNACC ENGINEERING SOLUTIONS, we specialize in mechanical design solutions that empower businesses to thrive in a competitive market. With a passion for innovation and a commitment to excellence, we offer a comprehensive suite of designing services tailored to your specific needs.
+                        At PNAQ Engineering Solutions LLP, we specialize in mechanical design solutions that empower businesses to thrive in a competitive market. With a passion for innovation and a commitment to excellence, we offer a comprehensive suite of designing services tailored to your specific needs.
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@ export default function AboutSectionOne() {
                                             PRESS TOOL DESIGN
                                         </div>
                                         <div className="service-content_">
-                                            We excel in creating press tools that streamline metalworking processes, enhancing productivity and reducing production costs.Unlock precision and efficiency in your manufacturing with Pinnac Engineering Solutions's expert Press Tool Design services. Our seasoned professionals specialize in creating cutting-edge designs using advanced technologies. Whether you need intricate details or robust performance, we tailor press tools to meet your unique specifications.
+                                            We excel in creating press tools that streamline metalworking processes, enhancing productivity and reducing production costs.Unlock precision and efficiency in your manufacturing with PNAQ Engineering Solutions LLP expert Press Tool Design services. Our seasoned professionals specialize in creating cutting-edge designs using advanced technologies. Whether you need intricate details or robust performance, we tailor press tools to meet your unique specifications.
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@ export default function AboutSectionOne() {
                                             STRUCTURAL DESIGN
                                         </div>
                                         <div className="service-content_">
-                                        Discover cutting-edge Structural Design services at Pinnac Engineering Solutions. Our expert team, proficient in advanced engineering software, brings a unique blend of creativity and technical precision to redefine the landscape of structural engineering. We create robust structural designs that are the foundation for safe and reliable mechanical systems. ensure your products reach customers intact.
+                                        Discover cutting-edge Structural Design services at PNAQ Engineering Solutions LLP. Our expert team, proficient in advanced engineering software, brings a unique blend of creativity and technical precision to redefine the landscape of structural engineering. We create robust structural designs that are the foundation for safe and reliable mechanical systems. ensure your products reach customers intact.
                                         </div>
                                     </div>
                                 </div>
@@ -92,7 +92,7 @@ export default function AboutSectionOne() {
                                             PACKAGING DESIGN
                                         </div>
                                         <div className="service-content_">
-                                        At Pinnac Engineering Solutions, we specialize in delivering cutting-edge Packaging Design services that seamlessly blend creativity with functionality. Our expert team leverages their design prowess to create visually appealing and strategically crafted packaging solutions. Whether you require eye-catching product packaging or efficient logistics solutions, our designs are tailored to leave a lasting impression. We understand the importance of packaging in brand identity and product protection. Our designs not only look appealing but also ensure your products reach customers intact.
+                                        At PNAQ Engineering Solutions LLP, we specialize in delivering cutting-edge Packaging Design services that seamlessly blend creativity with functionality. Our expert team leverages their design prowess to create visually appealing and strategically crafted packaging solutions. Whether you require eye-catching product packaging or efficient logistics solutions, our designs are tailored to leave a lasting impression. We understand the importance of packaging in brand identity and product protection. Our designs not only look appealing but also ensure your products reach customers intact.
                                         </div>
                                     </div>
                                 </div>

@@ -26,10 +26,7 @@ export default function HomeAbout() {
                             Designing the Backbone of Industry
                         </div>
                         <div className="about-right-content">
-                            we offer a wide range of designing services, including fixture
-                            design, press tool design, forging design, structural design,
-                            mold design, product design, packaging design and other
-                            designing services. Our team of experienced designers and
+                            we offer a wide range of designing services. Our team of experienced designers and
                             engineers are equipped with the latest tools and technologies
                             to help you create innovative and cost-effective designs that
                             meet our business requirements.

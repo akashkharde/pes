@@ -25,17 +25,13 @@ useEffect(() => {
       <div className="about_img_main">
         <img src={img} alt='about Img' />
       </div>
-      <section title="Pinnac About Us">
+      <section title="PNAQ About Us">
         <Title textone={"About Us"} />
         <AboutSectionOne />
       </section>
-      <section className="section-secondary-bg_" title="PSE Our Vision">
+      <section className="section-secondary-bg_" title="PNAQ Our Vision">
         <Title textone={"Our Vision"} />
         <OurVision />
-      </section>
-      <section className="section-secondary-bg mb-0" title="PSE Why Choose Us">
-        <Title textone={"Why Choose Pinnacc Engineering Solutions"} />
-        <WhyChooseUs />
       </section>
     </div>
   )

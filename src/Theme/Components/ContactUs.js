@@ -23,7 +23,7 @@ function ContactUs() {
           <div className="about_img_main">
           <img src={img} />
           </div>
-          <section title="PSE Contact Us">
+          <section title="PNAQ Contact Us">
             <Title textone={"Lest's Connect Togethor"} />
             <ContactPage/>
           </section>

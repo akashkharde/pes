@@ -67,8 +67,7 @@ export default function ContactPage() {
     });
     const sendEmail = async (e) => {
         e.preventDefault();
-        const emailRegex =
-            /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        const emailRegex =/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
         const mobileRegex = /^(\+91[\-\s]?)?[0]?(91)?[123456789]\d{9}$/;
         const nameRegex = /^[\\p{L} .'-]+$/;
 
@@ -133,7 +132,7 @@ export default function ContactPage() {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12">
-                        <div className="contact-title">Get in Touch with Pinnacc Engineering Services.</div>
+                        <div className="contact-title">Get in Touch with PNAQ Engineering Solutions LLP.</div>
                         <div className="contact-content">
                             Let's Start a Conversation
                         </div>

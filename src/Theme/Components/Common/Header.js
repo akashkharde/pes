@@ -23,7 +23,7 @@ function Header() {
           <div className='float-start'>
             <div className='main-logo'>
               <Link to="/">
-                <img src={logo} alt="pinnacc" />
+                <img src={logo} alt="PNAQ Engineering Solutions LLP logo" />
               </Link>
             </div>
           </div>
@@ -57,7 +57,12 @@ function Header() {
               </Link>
               <Link to={'/lifeAtPSE'}>
                 <button className={` col header_icon_sub_div ${path === "/lifeAtPSE" ? 'active' : ''}`} >
-                  <span className="header_icon_name">Life At PES</span>
+                  <span className="header_icon_name">Life At PNAQ</span>
+                </button>
+              </Link>
+              <Link to={'/why-us'}>
+                <button className={` col header_icon_sub_div ${path === "/why-us" ? 'active' : ''}`} >
+                  <span className="header_icon_name">Why Us</span>
                 </button>
               </Link>
               <Link to={'/contact'}>

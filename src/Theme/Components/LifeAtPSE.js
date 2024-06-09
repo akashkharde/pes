@@ -28,8 +28,8 @@ function LifeAtPSE() {
                 <Title textone={"Employee Speak"} />
                 <EmployeeSpeaks />
             </section> */}
-            <section className="section-secondary-bg mb-0" title="PSE Experience">
-                <Title textone={"PSE Softwares"} />
+            <section className="section-secondary-bg mb-0" title="PNAQ Experience">
+                <Title textone={"PNAQ Softwares"} />
                 <OurSoftwares />
             </section>
         </div>

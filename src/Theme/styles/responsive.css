@@ -902,6 +902,9 @@
 }
 
 @media only screen and (min-width: 300px) and (max-width: 600px) {
+  .whyUSimg_ {
+    width: 350px !important;
+}
 
   /* home page start  */
   .pixie-experince1 {

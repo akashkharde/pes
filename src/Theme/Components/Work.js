@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import WorkContainer from './Subcomponents/WorkContainer';
 import Title from '../Components/Common/Title';
 import img from '../Assets/images/work-header.png'
@@ -22,7 +22,7 @@ useEffect(() => {
     <div className="pinnac" >
         <img src={img} alt='img'/>
         <section title="Explore Our Portfolio">
-          <Title textone={"Our Work"} texttwo={""} />
+          <Title textone={"PNAQ Work"} texttwo={""} />
           <WorkContainer />
         </section>
       </div>

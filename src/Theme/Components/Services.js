@@ -21,12 +21,12 @@ function Services() {
   return (
     <div className="pinnac" >
       <img src={img} alt='img'  />
-      <section title="PES Our Expertise">
+      <section title="PNAQ  Expertise">
         <Title textone={"Our Expertise"} />
         <WhatWeDo />
       </section>
-      <section className="section-secondary-bg" title="PSE Our Services">
-        <Title textone={"Our Services"}/>
+      <section className="section-secondary-bg" title="PNAQ Services">
+        <Title textone={"PNAQ Services"}/>
         <ServicesList />
       </section>
     </div>

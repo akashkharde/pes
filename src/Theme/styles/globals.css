@@ -273,6 +273,7 @@ header {
   align-items: center;
   display: flex;
   justify-content: center;
+  z-index: 99;
 }
 
 .home_img_slider_Main {
@@ -287,11 +288,11 @@ nav.col.nav_col_main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 5px 10px;
   border-radius: 5px;
   width: fit-content;
-  border: 1px solid #e1c6c6;
+  border: 1px solid #413838;
 }
 
 .home_img_round_text {
@@ -652,7 +653,7 @@ section.section-secondary-bg {
 }
 
 .service__four {
-  background-image: url(../Assets/design/FD1.PNG);
+  background-image: url(../Assets/design/forging/fd1.JPG);
 }
 
 .service__five {
@@ -687,7 +688,7 @@ section.section-secondary-bg {
 .service-content {
   margin-top: 10px;
   font-family: ui-monospace, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -843,6 +844,12 @@ input.op__checkbox {
   margin: 30px 0px 0px 0px;
 }
 
+.work-button-container::-webkit-scrollbar {
+  display: none !important;
+}
+.buttons_mobileview::-webkit-scrollbar {
+  overflow-y: hidden;
+}
 .work-button button {
   background-color: var(--white);
   border: 1px solid var(--primary);
@@ -850,7 +857,7 @@ input.op__checkbox {
   padding: 4px 7px; 
   border-radius: 25px;
   margin-right: 13px;
-  transition: background-color 0.8s, color 0.8s;
+  transition: background-color 0.4s, color 0.4s;
   white-space: nowrap;
   margin-bottom: 20px !important;
   font-size: 13px;
@@ -892,7 +899,7 @@ input.op__checkbox {
   background-color: var(--sectionbg);
   margin: 2%;
   cursor: pointer;
-  transition: background-color 0.8s;
+  transition: background-color 0.4s;
 }
 
 .projects-section .project {
@@ -1592,7 +1599,7 @@ img.LifeAtPse_logo {
 
 .pixie-exp.exp4 {
   top: 30px;
-  right: 58px;
+  right: 69px;
 }
 
 img.home-header-center-img {
@@ -1743,4 +1750,89 @@ img.home-header-center-img {
 .header-menu.float-end.menuPosition {
   margin-top: 10px;
   font-family: ui-monospace, sans-serif;
+}
+
+
+.countup {
+  font-family: Montserrat, sans-serif !important;
+}
+
+.countupNum {
+  font-size: 4.5rem;
+  color: var(--primary);
+}
+
+.countupBox {
+  padding: 20px 0px;
+  min-width: 70%;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid;
+}
+
+.displayCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usCol {
+  color: var(--primary) !important;
+  font-size: x-large;
+    font-weight: 600;
+}
+
+img.imgabout {
+  width: -webkit-fill-available;
+  height: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.whyUSimg_ {
+  width: 450px !important;
+}
+
+
+
+.workflow-container {
+  padding: 20px;
+}
+
+.workflow-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .workflow-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
 }

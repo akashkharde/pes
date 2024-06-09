@@ -4,6 +4,19 @@ import * as Bs from 'react-icons/bs'
 import CF1 from "../../Assets/design/CF1.1.jpg";
 import CF2 from "../../Assets/design/CF2.1.jpg";
 import CF3 from "../../Assets/design/CF3.1.jpg"
+
+import FD11 from "../../Assets/design/fixture/CHASIS01.jpg"
+import FD12 from "../../Assets/design/fixture/DOORSASH ROBOTICCELL.jpg"
+import FD13 from "../../Assets/design/fixture/SPOTWELDING-01.jpg"
+import FD14 from "../../Assets/design/fixture/SPOTWELDING-02.jpg"
+import FD15 from "../../Assets/design/fixture/SPOTWELDING-03.jpg"
+import FD16 from "../../Assets/design/fixture/SPOTWELDING-04.jpg"
+// import FD7 from "../../Assets/design/fixture/"
+
+
+
+
+
 import PT1 from "../../Assets/design/PT1.jpg";
 import PT2 from "../../Assets/design/PT2.jpg";
 import PT3 from "../../Assets/design/PT3.jpg";
@@ -13,13 +26,13 @@ import PT6 from "../../Assets/design/PT6.jpg"
 import PT7 from "../../Assets/design/PT7.jpg"
 import PT8 from "../../Assets/design/PT8.jpg"
 
-import FD1 from "../../Assets/design/FD1.PNG";
-import FD2 from "../../Assets/design/FD2.PNG";
-import FD3 from "../../Assets/design/FD3.PNG";
-import FD4 from "../../Assets/design/FD4.PNG";
-import FD5 from "../../Assets/design/FD5.PNG"
-import FD6 from "../../Assets/design/FD6.PNG"
-import FD7 from "../../Assets/design/FD7.PNG"
+import FD1 from "../../Assets/design/forging/fd1.JPG";
+import FD2 from "../../Assets/design/forging/fd2.JPG";
+import FD3 from "../../Assets/design/forging/fd3.JPG";
+import FD4 from "../../Assets/design/forging/fd4.JPG";
+import FD5 from "../../Assets/design/forging/fd5.JPG"
+import FD6 from "../../Assets/design/forging/fd6.JPG"
+import FD7 from "../../Assets/design/forging/fd7.JPG"
 
 import MD1 from "../../Assets/design/mold1.1.jpg";
 import MD2 from "../../Assets/design/mold2.1.jpg";
@@ -36,11 +49,35 @@ import pac7 from "../../Assets/design/pac7.jpeg"
 import pac8 from "../../Assets/design/pac8.jpeg"
 import pac9 from "../../Assets/design/pac9.jpeg"
 
-import other1 from "../../Assets/design/RFC1.jpg";
-import other2 from "../../Assets/design/RFC2.jpg";
-import other3 from "../../Assets/design/SWF1.jpg";
-import other4 from "../../Assets/design/SWF2.jpg";
-import other5 from "../../Assets/design/structural1.1.jpg"
+import mhe1 from "../../Assets/design/mhe/mhe1.jpg";
+import mhe2 from "../../Assets/design/mhe/mhe2.jpg";
+import mhe3 from "../../Assets/design/mhe/mhe3.jpg";
+
+import spm1 from "../../Assets/design/spm/spm1.jpg";
+import spm2 from "../../Assets/design/spm/spm2.jpg";
+import spm3 from "../../Assets/design/spm/spm3.jpg";
+import spm4 from "../../Assets/design/spm/spm4.jpg";
+import spm5 from "../../Assets/design/spm/spm5.jpg";
+import spm6 from "../../Assets/design/spm/spm6.jpg";
+import spm7 from "../../Assets/design/spm/spm7.jpg";
+
+import twoDto3d1 from "../../Assets/design/2dTO3d/2dTO3d1.jpg";
+import twoDto3d2 from "../../Assets/design/2dTO3d/2dTO3d2.webp";
+import twoDto3d3 from "../../Assets/design/2dTO3d/2dTO3d3.jpg";
+import twoDto3d4 from "../../Assets/design/2dTO3d/2dTO3d4.png";
+import twoDto3d5 from "../../Assets/design/2dTO3d/2dTO3d5.png";
+
+import cad1 from "../../Assets/design/cadDrafting/cad1.png";
+import cad2 from "../../Assets/design/cadDrafting/cad2.jpg";
+import cad3 from "../../Assets/design/cadDrafting/cad3.jpg";
+import cad4 from "../../Assets/design/cadDrafting/cad4.png";
+
+
+
+
+
+
+
 
 
 
@@ -52,20 +89,20 @@ export default function WorkContainer(props) {
 
     useEffect(() => {
         if (showTabRef.current && showWork !== null) {
-          const activeButton = showTabRef.current.querySelector(`[data-index="${showWork}"]`);
-          if (activeButton) {
-            const containerWidth = showTabRef.current.clientWidth;
-            const activeButtonWidth = activeButton.offsetWidth;
-            const activeButtonLeft = activeButton.offsetLeft;
-            const scrollLeft = activeButtonLeft - (containerWidth - activeButtonWidth) / 2;
-            showTabRef.current.scrollLeft = scrollLeft;
-          }
+            const activeButton = showTabRef.current.querySelector(`[data-index="${showWork}"]`);
+            if (activeButton) {
+                const containerWidth = showTabRef.current.clientWidth;
+                const activeButtonWidth = activeButton.offsetWidth;
+                const activeButtonLeft = activeButton.offsetLeft;
+                const scrollLeft = activeButtonLeft - (containerWidth - activeButtonWidth) / 2;
+                showTabRef.current.scrollLeft = scrollLeft;
+            }
         }
-      }, [showWork]);
-    
-      const handleClick = (index) => {
+    }, [showWork]);
+
+    const handleClick = (index) => {
         setShowWork(index);
-      };
+    };
     return (
         <div className='work-inner-page-container'>
             <div className="container">
@@ -87,12 +124,15 @@ export default function WorkContainer(props) {
                     <div className="work-button nav-pills align-item-center d-flex justify-content-center" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="600"
                         id="pills-tab" role="tablist" >
                         <div className='buttons_mobileview' ref={showTabRef}>
-                            <button  data-index={1}  className={`workBtn ${showWork === 1 ? "active" : ''}`} id="pills-0-tab" data-bs-toggle="pill" data-bs-target="#pills-0" type="button" role="tab" aria-controls="pills-0" aria-selected="true" onClick={() => handleClick(1)}> FIXTURE DESIGN</button>
-                            <button  data-index={2}  className={`workBtn ${showWork === 2 ? "active" : ''}`} id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="false" onClick={() => handleClick(2)}>   PRESS TOOL DESIGN</button>
-                            <button  data-index={3}  className={`workBtn ${showWork === 3 ? "active" : ''}`} id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false" onClick={() => handleClick(3)}>   FORGING TOOL DESIGN</button>
-                            <button  data-index={4}  className={`workBtn ${showWork === 4 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(4)}>MOLD DESIGN</button>
-                            <button  data-index={5}  className={`workBtn ${showWork === 5 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(5)}>PACKAGING DESIGN</button>
-                            <button  data-index={6}  className={`workBtn ${showWork === 6 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(6)}>OTHERS</button>
+                            <button data-index={1} className={`workBtn ${showWork === 1 ? "active" : ''}`} id="pills-0-tab" data-bs-toggle="pill" data-bs-target="#pills-0" type="button" role="tab" aria-controls="pills-0" aria-selected="true" onClick={() => handleClick(1)}> FIXTURE DESIGN</button>
+                            <button data-index={2} className={`workBtn ${showWork === 2 ? "active" : ''}`} id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="false" onClick={() => handleClick(2)}>   PRESS TOOL DESIGN</button>
+                            <button data-index={3} className={`workBtn ${showWork === 3 ? "active" : ''}`} id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false" onClick={() => handleClick(3)}>   FORGING TOOL DESIGN</button>
+                            <button data-index={4} className={`workBtn ${showWork === 4 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(4)}>MOLD DESIGN</button>
+                            <button data-index={5} className={`workBtn ${showWork === 5 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(5)}>PACKAGING DESIGN</button>
+                            <button data-index={6} className={`workBtn ${showWork === 6 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(6)}>MATERIAL HANDELING EQUIBMENT</button>
+                            <button data-index={7} className={`workBtn ${showWork === 7 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(7)}>SPM</button>
+                            <button data-index={8} className={`workBtn ${showWork === 8 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(8)}>2D TO 3D</button>
+                            <button data-index={9} className={`workBtn ${showWork === 9 ? "active" : ''}`} id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false" onClick={() => handleClick(9)}>CAD DRAFTING AND DESIGN</button>
                         </div>
                     </div>
                 </div>
@@ -105,17 +145,32 @@ export default function WorkContainer(props) {
                         <div className="projects-section">
                             <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                                 <div className="project" >
-                                    <img className="workimage" alt="WorkImg" src={CF1} />
+                                    <img className="workimage" alt="WorkImg" src={FD11} />
                                 </div>
                             </div>
                             <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                                 <div className="project" >
-                                    <img className="workimage" alt="WorkImg" src={CF2} />
+                                    <img className="workimage" alt="WorkImg" src={FD12} />
                                 </div>
                             </div>
                             <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                                 <div className="project" >
-                                    <img className="workimage" alt="WorkImg" src={CF3} />
+                                    <img className="workimage" alt="WorkImg" src={FD13} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={FD14} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={FD15} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={FD16} />
                                 </div>
                             </div>
                             <div className="clear"></div>
@@ -285,27 +340,112 @@ export default function WorkContainer(props) {
                         <div className="projects-section">
                             <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                                 <div className="project" >
-                                    <img className="workimage" alt="WorkImg" src={other1} />
+                                    <img className="workimage" alt="WorkImg" src={mhe1} />
                                 </div>
                             </div>
                             <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                                 <div className="project" >
-                                    <img className="workimage" alt="WorkImg" src={other2} />
+                                    <img className="workimage" alt="WorkImg" src={mhe2} />
                                 </div>
                             </div>
                             <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                                 <div className="project" >
-                                    <img className="workimage" alt="WorkImg" src={other3} />
+                                    <img className="workimage" alt="WorkImg" src={mhe3} />
+                                </div>
+                            </div>
+                            <div className="clear"></div>
+                        </div>
+                    }
+                    {showWork === 7 &&
+                        <div className="projects-section">
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={spm1} />
                                 </div>
                             </div>
                             <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                                 <div className="project" >
-                                    <img className="workimage" alt="WorkImg" src={other4} />
+                                    <img className="workimage" alt="WorkImg" src={spm2} />
                                 </div>
                             </div>
                             <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                                 <div className="project" >
-                                    <img className="workimage" alt="WorkImg" src={other5} />
+                                    <img className="workimage" alt="WorkImg" src={spm3} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={spm4} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={spm5} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={spm6} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={spm7} />
+                                </div>
+                            </div>
+                            <div className="clear"></div>
+                        </div>
+                    }
+                    {showWork === 8 &&
+                        <div className="projects-section">
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={twoDto3d1} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={twoDto3d2} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={twoDto3d3} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={twoDto3d4} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={twoDto3d5} />
+                                </div>
+                            </div>
+                            <div className="clear"></div>
+                        </div>
+                    }
+                    {showWork === 9 &&
+                        <div className="projects-section">
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={cad1} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={cad2} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={cad3} />
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="project" >
+                                    <img className="workimage" alt="WorkImg" src={cad4} />
                                 </div>
                             </div>
                             <div className="clear"></div>

@@ -56,7 +56,7 @@ export default function LifeAtPSEHeader() {
                                         <img src={imgOne} />
                                     </div>
                                     <div className="pointer-text">
-                                    Employee benefits: competitive compensation, flexible work arrangements, and a friendly environment\                                    </div>
+                                    Employee benefits: competitive compensation, flexible work arrangements, and a friendly environment                               </div>
                                 </div>
                             </div>
                         </div>

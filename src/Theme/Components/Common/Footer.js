@@ -14,7 +14,7 @@ export default function Footer() {
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-12 footer_logo_300">
                         <div className="footer-logo">
-                            <img src={logo} alt="pinnacc" />
+                            <img src={logo} alt="PNAQ logo" />
                         </div>
                         <div className="footer-about">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -60,7 +60,7 @@ export default function Footer() {
                     <div className="icon-div"><Ti.TiSocialLinkedin /></div>
                 </div>
             </div>
-            <div className='text-center'>© Pinnac Engineering Solutions 2023. All rights reserved.</div>
+            <div className='text-center'>© PNAQ Engineering Solutions LLP 2023. All rights reserved.</div>
         </footer>
     )
 }
