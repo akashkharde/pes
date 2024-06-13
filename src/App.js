@@ -18,9 +18,7 @@ import WhyUs from './Theme/Components/WhyUs';
 
 
 function App() {
-  // setTimeout(() => {
-  //   alert("This Website is Under Cunstruction.");
-  // }, 3000);
+  
 
   return (
     <div className="app">

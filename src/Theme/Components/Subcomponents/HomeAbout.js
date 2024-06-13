@@ -23,10 +23,10 @@ export default function HomeAbout() {
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="600">
                         <div className="about-right-title">
-                            Designing the Backbone of Industry
+                            Designing The Backbone Of Industry
                         </div>
                         <div className="about-right-content">
-                            we offer a wide range of designing services. Our team of experienced designers and
+                            We offer a wide range of designing services. Our team of experienced designers and
                             engineers are equipped with the latest tools and technologies
                             to help you create innovative and cost-effective designs that
                             meet our business requirements.

@@ -25,10 +25,19 @@ export default function ServicesList() {
                                 FIXTURE DESIGN
                             </div>
                             <div className="service-content">
-                                <li> Machining Fixtures </li>
-                                <li>  Welding Fixtures </li>
-                                <li>  Assembly Fixtures </li>
-                                <li>  Checking Fixtures </li>
+                                <li>
+                                    Welding fixtures.
+                                    <ul>
+                                        <li>BIW fixture design.</li>
+                                        <li>Manual welding fixtures.</li>
+                                        <li>Heavy fabrication welding fixtures.</li>
+                                    </ul>
+                                </li>
+                                <li> Machining fixtures. </li>
+                                <li> Assembly checking fixtures.</li>
+                                <li> Panel checkers.</li>
+                                <li> Plastic product checking gauges.</li>
+
                             </div>
                         </div>
                     </div>
@@ -41,24 +50,20 @@ export default function ServicesList() {
                             <div className="service-title">
                                 PRESS TOOL DESIGN
                             </div>
-                            <div className="d-flex align-items-start justify-content-center">
                                 <div className="service-content">
                                     <li>Blanking tool. </li>
                                     <li>Parting off tool. </li>
                                     <li> Forming tool</li>
                                     <li> Piercing tool.</li>
                                     <li> Trimming tool.</li>
-                                </div>
-                                <div className="service-content">
                                     <li>Drawing tool. </li>
                                     <li>Cut off tool. </li>
                                     <li> Shaving tool.</li>
                                     <li> Progressive tool.</li>
                                 </div>
-                            </div>
                         </div>
                     </div>
-                    <div className="service  col-sm-12 col-md-6 col-lg-4 service__four" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
+                    {/* <div className="service  col-sm-12 col-md-6 col-lg-4 service__four" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
                         <div className="service-box">
                             <div className="service-img">
                                 <gi.GiSwordMold />
@@ -73,7 +78,7 @@ export default function ServicesList() {
                                 <li>Optimized forging processes</li>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="service  col-sm-12 col-md-6 col-lg-4 service__five" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
                         <div className="service-box">
                             <div className="service-img">
@@ -83,12 +88,10 @@ export default function ServicesList() {
                                 PACKAGING DESIGN
                             </div>
                             <div className="service-content">
-                                We specialize in creating product package designs that not only enhance the
-                                customer experience but also optimize costs.
-                                <ul>
-                                    <li>CORRUGATED BOXES</li>
-                                    <li>WOODEN CRATES AND OTHER PACKAGING BOXES</li>
-                                </ul>
+                                <li>Corrugated boxes. </li>
+                                <li>Wooden crates. </li>
+                                <li> Customized packaging.</li>
+                                <li>Packaging detailing. </li>
                             </div>
                         </div>
                     </div>
@@ -100,19 +103,15 @@ export default function ServicesList() {
                             <div className="service-title">
                                 MATERIAL HANDELING EQUIPMENTS
                             </div>
-
                             <div className="service-content">
-                                <li>Transport materials efficiently</li>
-                                <li>Processing equipment</li>
-                                <li>Storage solutions</li>
-                                <li>Packaging tools</li>
-                                <li>Automated systems</li>
-                                <li>Customizable equipment</li>
-                                <li>Enhanced safety features</li>
+                                <li>Trolleys.</li>
+                                <li>Conveyors.</li>
+                                <li>Pallets.</li>
+                                <li>Bins.</li>
                             </div>
                         </div>
                     </div>
-                    <div className="service col-sm-12 col-md-6 col-lg-4 service__six" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
+                    <div className="service col-sm-12 col-md-6 col-lg-4 service__seven" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
                         <div className="service-box">
                             <div className="service-img">
                                 <fi.FiPackage />
@@ -121,18 +120,17 @@ export default function ServicesList() {
                                 SPM
                             </div>
                             <div className="service-content">
-                                <li> Srewing SPM </li>
-                                <li>  Pressing SPM </li>
-                                <li>  Drilling SPM</li>
-                                <li>  Reveting SPM </li>
-                                <li>  Spring Loading SPM </li>
-                                <li>  Bolt Clinching SPM </li>
-                                <li>  Seam Welding SPM  </li>
-                                <li>  Reveting SPM </li>
+                                <li> Srewing SPM.</li>
+                                <li>  Pressing SPM. </li>
+                                <li>  Drilling SPM.</li>
+                                <li>  Reveting SPM. </li>
+                                <li>  Spring Loading SPM. </li>
+                                <li>  Bolt Clinching SPM. </li>
+                                <li>  Seam Welding SPM.  </li>
                             </div>
                         </div>
                     </div>
-                    <div className="service col-sm-12 col-md-6 col-lg-4 service__six" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
+                    <div className="service col-sm-12 col-md-6 col-lg-4 service__eight" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
                         <div className="service-box">
                             <div className="service-img">
                                 <fi.FiPackage />
@@ -141,14 +139,14 @@ export default function ServicesList() {
                                 2D TO 3D CONVERSION
                             </div>
                             <div className="service-content">
-                                <li>2D to 3D models</li>
-                                <li>Enhanced visualization</li>
-                                <li>Accurate prototyping</li>
-                                <li>Custom solutions</li>
+                                <li>Prototype.</li>
+                                <li>Reverse engineering.                                </li>
+                                <li>Product design.                                </li>
+                                <li>Custom solutions.</li>
                             </div>
                         </div>
                     </div>
-                    <div className="service col-sm-12 col-md-6 col-lg-4 service__six" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
+                    <div className="service col-sm-12 col-md-6 col-lg-4 service__nine" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
                         <div className="service-box">
                             <div className="service-img">
                                 <fi.FiPackage />
@@ -157,10 +155,10 @@ export default function ServicesList() {
                                 CAD DRAFTING AND DESIGN
                             </div>
                             <div className="service-content">
-                                <li>Precise CAD drawings</li>
-                                <li>Custom design solutions</li>
-                                <li>3D modeling</li>
-                                <li>Technical documentation</li>
+                                <li>Manufecturing cad detailing.</li>
+                                <li>Steel structure detailing.</li>
+                                <li>Product detailing.</li>
+                                <li>Custom solutions.</li>
                             </div>
                         </div>
                     </div>
@@ -173,11 +171,11 @@ export default function ServicesList() {
                                 FORGING
                             </div>
                             <div className="service-content">
-                                <li>Forging tool for press</li>
-                                <li>Forging tool for upsetter</li>
-                                <li>Forging tool for hammer</li>
-                                <li>Forging tool for screw press</li>
-                                <li>Forging tool for press</li>
+                                <li>Forging tool for press.</li>
+                                <li>Forging tool for upsetter.</li>
+                                <li>Forging tool for hammer.</li>
+                                <li>Forging tool for screw press.</li>
+                                <li>Forging tool for press.</li>
 
                             </div>
                         </div>

@@ -28,7 +28,7 @@ export default function OurSoftwares() {
         <div className="pixie-exp exp4">
           <div className="experience-number pb-3">UNIGRAPHICS Nx</div>
           <div className="experience-text">
-            CATIA is a powerful design and engineering software suite developed by Dassault Systèmes. Widely used in industries like aerospace and automotive, CATIA facilitates complex product design, analysis, and simulation in a collaborative environment.
+          UNIGRAPHICS Nx is a comprehensive CAD/CAM/CAE software suite developed by Siemens PLM Software. Renowned for its versatility and advanced capabilities, UNIGRAPHICS Nx is widely utilized in industries such as aerospace, automotive, and industrial machinery.
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@ export default function OurSoftwares() {
         </div>
         <div className="pixie-exp exp3">
           <div className="experience-text pb-3">
-            CATIA is a powerful design and engineering software suite developed by Dassault Systèmes. Widely used in industries like aerospace and automotive, CATIA facilitates complex product design, analysis, and simulation in a collaborative environment.
+          UNIGRAPHICS Nx is a comprehensive CAD/CAM/CAE software suite developed by Siemens PLM Software. Renowned for its versatility and advanced capabilities, UNIGRAPHICS Nx is widely utilized in industries such as aerospace, automotive, and industrial machinery.
           </div>
           <div className="experience-number">UNIGRAPHICS Nx</div>
         </div>

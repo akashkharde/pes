@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 import * as Ti from "react-icons/ti"
-import logo from '../../Assets/images/PES-3-.png'
+import logo from '../../Assets/images/finalLogoBack.png'
 import address from '../../Assets/images/location.png'
 import contact from '../../Assets/images/call.png'
 import gmail from '../../Assets/images/mail.png'
@@ -17,7 +17,7 @@ export default function Footer() {
                             <img src={logo} alt="PNAQ logo" />
                         </div>
                         <div className="footer-about">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        Specializing in mechanical design solutions to empower businesses in a competitive market. Our passion for innovation and commitment to excellence drive us to deliver tailored design services that meet your specific needs.
                         </div>
                     </div>
 
@@ -30,7 +30,7 @@ export default function Footer() {
                                 </div>
                                 <div className="float-start p-1">
                                     Mahavir Residency, 624, Spine Rd, Shivatej Nagar,
-                                    Chinchwad, Pimpri-Chinchwad, Maharashtra 411019
+                                    Chinchwad, Pimpri-Chinchwad, Maharashtra 411019.
                                 </div>
                                 <div className="clear"></div>
                             </div>
@@ -48,7 +48,7 @@ export default function Footer() {
                                     <img className='f__img' src={gmail} />
                                 </div>
                                 <div className="float-start p-1">
-                                    akharde111@gmail.com
+                                design1pinnac.@gmail.com
                                 </div>
                             </div>
                         </div>

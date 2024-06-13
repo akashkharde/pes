@@ -11,10 +11,10 @@ function CountUpComp() {
     const [isVisible3, setIsVisible3] = useState(false);
     const [isVisible4, setIsVisible4] = useState(false);
 
-    const endCount1 = 10;
-    const endCount2 = 30;
-    const endCount3 = 12;
-    const endCount4 = 5290;
+    const endCount1 = 20;
+    const endCount2 = 16;
+    const endCount3 = 6;
+    const endCount4 = 700;
 
     const targetRef1 = useRef(null);
     const targetRef2 = useRef(null);
@@ -59,7 +59,7 @@ function CountUpComp() {
                 <div className="d-flex displayCenter mb-4" >
                     <div className='countupBox '>
                         <div className='countupNum fw-bold' ref={targetRef1}> {!isVisible1 && "0"} {isVisible1 && <CountUp start={1} end={endCount1} duration={5} />} + </div>
-                        <div className='heading  usCol'>Years Of Experience</div>
+                        <div className='heading  usCol'>Years Of combined Experience</div>
                     </div>
                 </div>
                 <div className="d-flex displayCenter  mb-4" >

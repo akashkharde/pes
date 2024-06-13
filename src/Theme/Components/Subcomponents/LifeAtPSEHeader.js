@@ -1,6 +1,5 @@
 import img from '../../Assets/images/lifeatpixie-circle2.png';
 import imgOne from '../../Assets/images/tick-mark.png';
-import logo from '../../Assets/images/PES-3-.png';
 
 
 export default function LifeAtPSEHeader() {
@@ -30,7 +29,7 @@ export default function LifeAtPSEHeader() {
                                         <img src={imgOne} />
                                     </div>
                                     <div className="pointer-text">
-                                        Valuing team members, fostering personal and professional growth.
+                                    Valuing team members, fostering personal and professional growth.
                                     </div>
                                 </div>
                                 <div className="lifeatpixie-header-point">
@@ -38,8 +37,7 @@ export default function LifeAtPSEHeader() {
                                         <img src={imgOne} />
                                     </div>
                                     <div className="pointer-text">
-                                        Supportive leaders providing guidance and assistance.
-                                    </div>
+                                    Supportive leaders providing guidance and assistance.                            </div>
                                 </div>
                             </div>
                             <div className="lifeatpixie-header-points">

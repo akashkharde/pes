@@ -17,11 +17,14 @@
   height: fit-content;
 }
 
+
+
 .carousel .slide img {
-  width: 100%;
-  vertical-align: top;
+  width: 36%;
+  vertical-align: bottom;
   border: 0;
-  /* height: 90vh; */
+  top: 66px;
+  position: relative;
 }
 
 .carousel .control-arrow,
@@ -394,6 +397,11 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+  .carousel .slide img {
+  width: 100%;
+  vertical-align: top;
+  border: 0;
+}
   .service_row_ {
     margin: 10px 20px 30px 20px;
     justify-content: center;
@@ -470,7 +478,9 @@
   }
 
   .main-logo {
-    padding-top: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
   }
 
   .main-header input[type="checkbox"],
@@ -586,7 +596,7 @@
   }
 
   header {
-    height: 80px;
+    height: 75px;
   }
 
   .about-right-button {
@@ -842,6 +852,11 @@
 }
 
 @media only screen and (min-width: 500px) and (max-width: 600px) {
+  .carousel .slide img {
+    width: 100%;
+    vertical-align: top;
+    border: 0;
+  }
   .service_ {
     width: 45.33% !important;
     margin-bottom: 20px;
@@ -864,6 +879,11 @@
 }
 
 @media only screen and (min-width: 200px) and (max-width: 500px) {
+  .carousel .slide img {
+    width: 100%;
+    vertical-align: top;
+    border: 0;
+  }
   .footer-title {
     font-size: 20px;
     color: var(--white);
@@ -916,7 +936,7 @@
   }
 
   .buttons_mobileview {
-    overflow-y: scroll;
+    overflow-y: hidden;
     white-space: nowrap;
   }
 
@@ -1111,7 +1131,9 @@
   }
 
   .main-logo {
-    padding-top: 16px;
+
+    padding-top: 5px;
+        padding-bottom: 5px;
   }
 
   .main-header input[type="checkbox"],

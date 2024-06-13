@@ -177,7 +177,7 @@ section {
 }
 
 header {
-  height: 80px;
+  height: 70px;
 }
 
 .text-left {
@@ -185,7 +185,7 @@ header {
 }
 
 .main-header {
-  padding: 10px 60px;
+  padding: 5px 60px;
   background-color: var(--white);
   position: fixed;
   width: 100%;
@@ -201,7 +201,7 @@ header {
 }
 
 .main-logo img {
-  width: 115px;
+  width: 180px;
   height: auto;
 }
 
@@ -571,7 +571,7 @@ ul.footer-quick-links li {
 }
 
 .experience-number {
-  font-size: 25px;
+  font-size: 16px;
   text-align: center;
   font-family: ui-monospace, sans-serif;
   color: var(--primary);
@@ -657,11 +657,23 @@ section.section-secondary-bg {
 }
 
 .service__five {
-  background-image: url(../Assets/design/pac1.jpeg);
+  background-image: url(../Assets/design/packagin/TPI005.JPG);
 }
 
 .service__six {
-  background-image: url(../Assets/design/pac4.jpeg);
+  background-image: url(../Assets/design/forging/fd2.JPG);
+}
+
+.service__seven {
+  background-image: url(../Assets/design/spm/spm7.png);
+}
+
+.service__eight {
+  background-image: url(../Assets/design/2dTO3d/2dTO3d1.jpg);
+}
+
+.service__nine {
+  background-image: url(../Assets/design/cadDrafting//cad1.png);
 }
 
 .service-img {
@@ -829,6 +841,8 @@ input.op__checkbox {
 
 .buttons_mobileview {
   white-space: nowrap;
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .our-work-content {
@@ -843,13 +857,40 @@ input.op__checkbox {
 .work-button-container {
   margin: 30px 0px 0px 0px;
 }
-
-.work-button-container::-webkit-scrollbar {
-  display: none !important;
-}
+/* Handle (Thumb) on Hover */
 .buttons_mobileview::-webkit-scrollbar {
+  overflow-y: hidden !important;
+}
+/* Scrollbar Styles for WebKit Browsers (e.g., Chrome, Safari) */
+.buttons_mobileview::-webkit-scrollbar {
+  width: 8px;  /* Set the width of the scrollbar */
+  height: 10px;
   overflow-y: hidden;
 }
+
+/* Track */
+.buttons_mobileview::-webkit-scrollbar-track {
+  background: #f1f1f1;  /* Background color of the scrollbar track */
+  border-radius: 13px; 
+  border: 1px solid #282626;  /* Border around the scrollbar thumb */
+   
+}
+
+/* Handle (Thumb) */
+.buttons_mobileview::-webkit-scrollbar-thumb {
+  background: var(--primary);  /* Black color for the scrollbar thumb */
+  border-radius: 10px;  /* Rounded corners for the scrollbar thumb */
+  border: 1px solid #f1f1f1;  /* Border around the scrollbar thumb */
+  border: 1px solid #282626;  /* Border around the scrollbar thumb */
+}
+
+/* Handle (Thumb) on Hover */
+.buttons_mobileview::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
+
+
 .work-button button {
   background-color: var(--white);
   border: 1px solid var(--primary);
@@ -865,9 +906,8 @@ input.op__checkbox {
 }
 
 .work-button button:hover {
-  background-color: var(--primary);
   border: 1px solid var(--primary);
-  color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
 }
 
 .border-bottom-work {
@@ -1048,7 +1088,12 @@ input.op__checkbox {
   margin-top: 4px;
 }
 
+.contact-form.aos-init.aos-animate {
+  cursor: auto;
+}
+
 .contact-container {
+  cursor: pointer;
   padding: 100px 0 0 0;
   background-image: url('../Assets/images/contact-bg.png');
   background-size: 100% auto;
@@ -1330,7 +1375,7 @@ img.LifeAtPse_logo {
 
 .service-title_ {
   margin-top: -15px;
-  font-size: 18px;
+  font-size: 15px;
   font-family: ui-monospace, sans-serif;
   align-items: center;
   display: flex;
@@ -1835,4 +1880,9 @@ img.imgabout {
   .card-text {
     font-size: 0.9rem;
   }
+}
+
+.section-secondary-bg_ {
+  margin-bottom: 30px;
+
 }

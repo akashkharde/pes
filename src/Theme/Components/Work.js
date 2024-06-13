@@ -21,10 +21,7 @@ useEffect(() => {
   return (
     <div className="pinnac" >
         <img src={img} alt='img'/>
-        <section title="Explore Our Portfolio">
-          <Title textone={"PNAQ Work"} texttwo={""} />
           <WorkContainer />
-        </section>
       </div>
   )
 }

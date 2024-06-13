@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import logo from '../../Assets/images/PES-3-.png'
+import logo from '../../Assets/images/finalLogo.jpg'
 
 function Header() {
   const location = useLocation();

@@ -31,27 +31,17 @@ export default function HomeWork() {
                 <div className="work-button-container">
                     <div className="work-button align-item-center d-flex justify-content-center" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="600">
                         <div className='buttons_mobileview'>
-                            <button>FIXTURE DESIGN</button>
+                            <button  onClick={() =>handleWorkRouting(1)}>FIXTURE DESIGN</button>
                             <button  onClick={() =>handleWorkRouting(2)}>PRESS TOOL DESIGN</button>
                             <button  onClick={() =>handleWorkRouting(3)}>FORGING TOOL DESIGN</button>
-                            <button  onClick={() =>handleWorkRouting(4)}>MOLD DESIGN</button>
                             <button  onClick={() =>handleWorkRouting(5)}>PACKAGING DESIGN</button>
                             <button  onClick={() =>handleWorkRouting(6)}>MATERIAL HANDELING EQUIBMENT</button>
                             <button  onClick={() =>handleWorkRouting(7)}>SPM</button>
                             <button  onClick={() =>handleWorkRouting(8)}>2D TO 3D</button>
                             <button  onClick={() =>handleWorkRouting(9)}>CAD DRAFTING AND DESIGN</button>
-
-
-
                         </div>
-
-
                     </div>
                 </div>
-                <div className="border-bottom-work my-2" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="600">
-                    <div className="border-inside-border"></div>
-                </div>
-
                 <div className="projects-section">
                     <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                         <div className="project" >

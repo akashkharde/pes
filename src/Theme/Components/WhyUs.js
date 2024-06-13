@@ -41,13 +41,6 @@ function WhyUs() {
                     <div className='d-flex align-item-center justify-content-start w-100 mb-3'>
                         <div className='mx-3 displayCenter'> <img src={increase} alt=' ' className='bg-blue imgIncrease displayCenter' /></div>
                         <div className=''>
-                            <div className='subHeading'>Onsite Support:</div>
-                            <div className='text'>Provide onsite support.</div>
-                        </div>
-                    </div>
-                    <div className='d-flex align-item-center justify-content-start w-100 mb-3'>
-                        <div className='mx-3 displayCenter'> <img src={increase} alt=' ' className='bg-blue imgIncrease displayCenter' /></div>
-                        <div className=''>
                             <div className='subHeading'>Experienced Engineers:</div>
                             <div className='text'>Engineers with minimum 2 years plus of experience.</div>
                         </div>

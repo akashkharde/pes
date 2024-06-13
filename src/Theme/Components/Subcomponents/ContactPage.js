@@ -40,7 +40,6 @@ export default function ContactPage() {
 
     const isOptionSelected = (option) => selectedOptions.includes(option);
     const handleRedirect = () => {
-        alert("1")
         const googleMapsAddress = '  Mahavir Residency, 624, Spine Rd, Shivatej Nagar, Chinchwad, Pimpri-Chinchwad, Maharashtra 411019';
 
 
@@ -127,14 +126,17 @@ export default function ContactPage() {
             }
         }
     };
+    const stopPropagation = (event) => {
+        event.stopPropagation();
+      };
     return (
-        <div className="contact-container">
+        <div className="contact-container" onClick={handleRedirect}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12">
                         <div className="contact-title">Get in Touch with PNAQ Engineering Solutions LLP.</div>
                         <div className="contact-content">
-                            Let's Start a Conversation
+                            Let's Start a Conversation.
                         </div>
 
                         <div
@@ -142,6 +144,7 @@ export default function ContactPage() {
                             data-aos="zoom-in-left"
                             data-aos-easing="linear"
                             data-aos-duration="600"
+                            onClick={stopPropagation} 
                         >
                             <div className="contact-detail" >
                                 <div className="details" style={{ cursor: "pointer" }} onClick={handleRedirect}>
@@ -150,7 +153,7 @@ export default function ContactPage() {
                                     </div>
                                     <div className="address">
                                         Mahavir Residency, 624, Spine Rd, Shivatej Nagar,
-                                        Chinchwad, Pimpri-Chinchwad, Maharashtra 411019
+                                        Chinchwad, Pimpri-Chinchwad, Maharashtra 411019.
                                     </div>
                                 </div>
                                 <div className="details">
