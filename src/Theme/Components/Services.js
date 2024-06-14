@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect,useState } from 'react'
 import Title from '../Components/Common/Title';
 import WhatWeDo from './Subcomponents/WhatWeDo';
 import ServicesList from './Subcomponents/ServicesList';
@@ -20,7 +20,7 @@ function Services() {
   }, [shouldScrollToTop]);
   return (
     <div className="pinnac" >
-      <img src={img} alt='img'  />
+      <img src={img} alt='services'  />
       <section title="PNAQ  Expertise">
         <Title textone={"Our Expertise"} />
         <WhatWeDo />

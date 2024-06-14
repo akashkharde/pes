@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Theme/Components/Home';
 import About from './Theme/Components/About';
 import Services from './Theme/Components/Services';
@@ -35,9 +35,6 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-
-      PNAQ ENGINEERING SOLUTIONS LLP
-        PNAQ Engineering Solutions LLP
     </div>
   );
 }

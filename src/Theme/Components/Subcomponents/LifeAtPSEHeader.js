@@ -10,9 +10,8 @@ export default function LifeAtPSEHeader() {
                     <div className="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="600">
                         <div className="left-image-container">
                             <div className="life-at-pixie-main-image">
-                                <img src={img} />
+                                <img src={img} alt='company life' />
                                 <div className="life-at-pixie-small-image">
-                                    {/* <img src={logo} className='LifeAtPse_logo' /> */}
                                 </div>
                             </div>
                         </div>
@@ -26,7 +25,7 @@ export default function LifeAtPSEHeader() {
                             <div className="lifeatpixie-header-points">
                                 <div className="lifeatpixie-header-point">
                                     <div className="pointer-image">
-                                        <img src={imgOne} />
+                                        <img src={imgOne} alt='correct mark' />
                                     </div>
                                     <div className="pointer-text">
                                     Valuing team members, fostering personal and professional growth.
@@ -34,7 +33,7 @@ export default function LifeAtPSEHeader() {
                                 </div>
                                 <div className="lifeatpixie-header-point">
                                     <div className="pointer-image">
-                                        <img src={imgOne} />
+                                        <img src={imgOne}  alt='correct mark'  />
                                     </div>
                                     <div className="pointer-text">
                                     Supportive leaders providing guidance and assistance.                            </div>
@@ -43,7 +42,7 @@ export default function LifeAtPSEHeader() {
                             <div className="lifeatpixie-header-points">
                                 <div className="lifeatpixie-header-point">
                                     <div className="pointer-image">
-                                        <img src={imgOne} />
+                                        <img src={imgOne}  alt='correct mark'  />
                                     </div>
                                     <div className="pointer-text">
                                     Encouraging open communication and collaboration for a strong team dynamic.
@@ -51,7 +50,7 @@ export default function LifeAtPSEHeader() {
                                 </div>
                                 <div className="lifeatpixie-header-point">
                                     <div className="pointer-image">
-                                        <img src={imgOne} />
+                                        <img src={imgOne}   alt='correct mark' />
                                     </div>
                                     <div className="pointer-text">
                                     Employee benefits: competitive compensation, flexible work arrangements, and a friendly environment                               </div>

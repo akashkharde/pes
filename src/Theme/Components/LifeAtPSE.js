@@ -19,7 +19,7 @@ function LifeAtPSE() {
       }, [shouldScrollToTop]);
     return (
         <div className="pinnac">
-            <img src={img} alt='img' />
+            <img src={img} alt='life in PNAQ' />
             <section >
                 <LifeAtPixieHeader />
             </section>

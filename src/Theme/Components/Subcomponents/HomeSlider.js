@@ -1,7 +1,10 @@
 import logo from '../../Assets/images/finalLogoBack.png'
-// import img from "../../Assets/design/CF1.1.jpg"
+import { useEffect, useState } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 import imgOne from "../../Assets/design/SWF2.jpg"
-import imgTwo from "../../Assets/design/RFC2.jpg"
 
 import hm1 from "../../Assets/design/2dTO3d/2dTO3d1.jpg"
 import hm2 from "../../Assets/design/pac7.jpeg"
@@ -12,16 +15,8 @@ import hm6 from "../../Assets/design/spm/spm4.jpg"
 
 
 
-
-import { useEffect, useRef, useState } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
-
 export default function HomeSlider() {
-
     const [shouldScrollToTop, setShouldScrollToTop] = useState(true);
-
     useEffect(() => {
         if (shouldScrollToTop) {
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -31,39 +26,29 @@ export default function HomeSlider() {
     return (
         <>
             <div data-aos="zoom-out-right" className="" >
-                <Carousel styles={styles} infiniteLoop={true} stopOnHover = {false} autoPlay={true} preventMovementUntilSwipeScrollTolerance={false} swipeScrollTolerance={10} >
-                    <div>
-                        <img src={imgTwo} className="homeSlider" alt='Img' />
-                        <p className="legend">Legend 2</p>
-                    </div>
+                <Carousel styles={styles} infiniteLoop={true} swipeable={false}  showIndicators = {false} stopOnHover = {false} autoPlay={true} preventMovementUntilSwipeScrollTolerance={false} swipeScrollTolerance={10} >
+                    
 
                     <div>
                         <img src={imgOne} className="homeSlider" alt='Img' />
-                        <p className="legend">Legend 3</p>
                     </div>
                     <div>
-                        <img src={hm1} className="homeSlider" alt='Img' />
-                        <p className="legend">Legend 3</p>
+                        <img src={hm1} className="homeSlider" alt='2D to 3d inage' />
                     </div>
                     <div>
-                        <img src={hm2} className="homeSlider" alt='Img' />
-                        <p className="legend">Legend 3</p>
+                        <img src={hm2} className="homeSlider" alt='packaging' />
                     </div>
                     <div>
-                        <img src={hm3} className="homeSlider" alt='Img' />
-                        <p className="legend">Legend 3</p>
+                        <img src={hm3} className="homeSlider" alt='SPOTWELDING fixture' />
                     </div>
                     <div>
-                        <img src={hm4} className="homeSlider" alt='Img' />
-                        <p className="legend">Legend 3</p>
+                        <img src={hm4} className="homeSlider" alt='forging' />
                     </div>
                     <div>
-                        <img src={hm5} className="homeSlider" alt='Img' />
-                        <p className="legend">Legend 3</p>
+                        <img src={hm5} className="homeSlider" alt='material handeling equibment' />
                     </div>
                     <div>
-                        <img src={hm6} className="homeSlider" alt='Img' />
-                        <p className="legend">Legend 3</p>
+                        <img src={hm6} className="homeSlider" alt='SPM' />
                     </div>
                 </Carousel>
             </div>

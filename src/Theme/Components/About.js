@@ -3,7 +3,7 @@ import AboutSectionOne from './Subcomponents/AboutSectionOne';
 import OurVision from './Subcomponents/OurVision';
 import WhyChooseUs from './Subcomponents/WhyChooseUs';
 import Title from '../Components/Common/Title';
-import img from '../Assets/images/about-header.png'
+import img from '../Assets/images/about-rectangle.webp'
 import { useLocation } from 'react-router-dom';
 import AOS from 'aos';
 

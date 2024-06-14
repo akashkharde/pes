@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import WorkContainer from './Subcomponents/WorkContainer';
-import Title from '../Components/Common/Title';
 import img from '../Assets/images/work-header.png'
 import AOS from 'aos';
 
@@ -20,7 +19,7 @@ useEffect(() => {
 }, [shouldScrollToTop]);
   return (
     <div className="pinnac" >
-        <img src={img} alt='img'/>
+        <img src={img} alt='work '/>
           <WorkContainer />
       </div>
   )

@@ -27,7 +27,7 @@ export default function ServicesList() {
                             <div className="service-content">
                                 <li>
                                     Welding fixtures.
-                                    <ul>
+                                    <ul className="nextedUL">
                                         <li>BIW fixture design.</li>
                                         <li>Manual welding fixtures.</li>
                                         <li>Heavy fabrication welding fixtures.</li>
@@ -63,22 +63,26 @@ export default function ServicesList() {
                                 </div>
                         </div>
                     </div>
-                    {/* <div className="service  col-sm-12 col-md-6 col-lg-4 service__four" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
+
+                    <div className="service col-sm-12 col-md-6 col-lg-4 service__four" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
                         <div className="service-box">
                             <div className="service-img">
-                                <gi.GiSwordMold />
+                                <fi.FiPackage />
                             </div>
                             <div className="service-title">
-                                FORGING TOOL DESIGN
+                                FORGING
                             </div>
                             <div className="service-content">
-                                <li>Custom tool design</li>
-                                <li>High-precision molds</li>
-                                <li>Durable die solutions</li>
-                                <li>Optimized forging processes</li>
+                                <li>Forging tool for press.</li>
+                                <li>Forging tool for upsetter.</li>
+                                <li>Forging tool for hammer.</li>
+                                <li>Forging tool for screw press.</li>
+
                             </div>
                         </div>
-                    </div> */}
+                    </div>
+
+                    
                     <div className="service  col-sm-12 col-md-6 col-lg-4 service__five" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
                         <div className="service-box">
                             <div className="service-img">
@@ -162,24 +166,7 @@ export default function ServicesList() {
                             </div>
                         </div>
                     </div>
-                    <div className="service col-sm-12 col-md-6 col-lg-4 service__six" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
-                        <div className="service-box">
-                            <div className="service-img">
-                                <fi.FiPackage />
-                            </div>
-                            <div className="service-title">
-                                FORGING
-                            </div>
-                            <div className="service-content">
-                                <li>Forging tool for press.</li>
-                                <li>Forging tool for upsetter.</li>
-                                <li>Forging tool for hammer.</li>
-                                <li>Forging tool for screw press.</li>
-                                <li>Forging tool for press.</li>
-
-                            </div>
-                        </div>
-                    </div>
+               
 
                     <div className="clear"></div>
                 </div>

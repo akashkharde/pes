@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 import * as Bs from "react-icons/bs";
 import * as Ti from "react-icons/ti";
@@ -40,16 +39,10 @@ export default function ContactPage() {
 
     const isOptionSelected = (option) => selectedOptions.includes(option);
     const handleRedirect = () => {
-        const googleMapsAddress = '  Mahavir Residency, 624, Spine Rd, Shivatej Nagar, Chinchwad, Pimpri-Chinchwad, Maharashtra 411019';
-
-
-        if (googleMapsAddress) {
-            const googleMapsUrl = `https://www.google.com/maps/place/${encodeURIComponent(googleMapsAddress)}`;
-            window.open(googleMapsUrl, '_blank');
-        } else {
-            console.error('No location provided.');
-        }
-
+        const latitude = 18.664857476025468;
+        const longitude = 73.80639759585682;
+        const url = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
+        window.open(url, '_blank');
     };
 
     const [errorMessage, setErrorMessage] = useState("");
@@ -64,13 +57,15 @@ export default function ContactPage() {
         description: "",
         selectedOptionList: '',
     });
+
     const sendEmail = async (e) => {
         e.preventDefault();
-        const emailRegex =/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        // eslint-disable-next-line
+        const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
         const mobileRegex = /^(\+91[\-\s]?)?[0]?(91)?[123456789]\d{9}$/;
-        const nameRegex = /^[\\p{L} .'-]+$/;
+        // const nameRegex = /^[\\p{L} .'-]+$/;
 
-        const descriptionRegex = /^\s*(\S\s*){10,150}$/;
+        // const descriptionRegex = /^\s*(\S\s*){10,150}$/;
 
 
         if (
@@ -97,13 +92,13 @@ export default function ContactPage() {
             setErrorMessage("*Please enter a valid mobile number")
             setTimeout(() => setErrorMessage(""), 5000);
 
-        } 
-         else {
+        }
+        else {
             try {
 
                 emailjs.sendForm('service_9mi51yc', 'template_mqakq6o', form.current, '0wsLN2EXZz9Iay6p1')
                     .then((result) => {
-                        if (result.status == 200) {
+                        if (result.status === 200) {
                             setSuccessMessage("We've received you message will contact you within 48 hours. Thank You.");
                             setSelectedOptions([]);
                             setTimeout(() => setSuccessMessage(""), 5000);
@@ -128,7 +123,14 @@ export default function ContactPage() {
     };
     const stopPropagation = (event) => {
         event.stopPropagation();
-      };
+    };
+
+    const handleClick = () => {
+        let phoneNumber = 919511890599;
+        const url = `https://wa.me/${phoneNumber}`;
+        window.open(url, '_blank');
+    };
+
     return (
         <div className="contact-container" onClick={handleRedirect}>
             <div className="container">
@@ -144,29 +146,30 @@ export default function ContactPage() {
                             data-aos="zoom-in-left"
                             data-aos-easing="linear"
                             data-aos-duration="600"
-                            onClick={stopPropagation} 
+                            onClick={stopPropagation}
                         >
                             <div className="contact-detail" >
-                                <div className="details" style={{ cursor: "pointer" }} onClick={handleRedirect}>
+                                <div className="details" style={{ cursor: "pointer" }} onClick={handleRedirect} title="Open Google map">
                                     <div>
-                                        <img src={img} />
+                                        <img src={img} alt='address' />
                                     </div>
                                     <div className="address">
                                         Mahavir Residency, 624, Spine Rd, Shivatej Nagar,
                                         Chinchwad, Pimpri-Chinchwad, Maharashtra 411019.
                                     </div>
                                 </div>
-                                <div className="details">
+                                <div className="details cursor-pointer" onClick={handleClick} title="chat on Whatsapp">
                                     <div>
-                                        <img src={imgTwo} />
+                                        <img src={imgTwo} alt='phone ' />
                                     </div>
                                     <div className="call">Phone: +91 95118 90599</div>
                                 </div>
-                                <div className="details">
+                                <div className="details cursor-pointer" >
                                     <div>
-                                        <img src={imgOne} />
+                                        <img src={imgOne} alt='gmail' />
                                     </div>
-                                    <div className="call">Email: design1pinnac.@gmail.com</div>
+                                    <div className="call">Email: info.pnaqengineering@gmail.com
+                                    </div>
                                 </div>
                                 <div className="details __details__">
                                     <div className="social-media-icons_c">

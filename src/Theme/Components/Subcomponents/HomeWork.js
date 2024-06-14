@@ -45,17 +45,17 @@ export default function HomeWork() {
                 <div className="projects-section">
                     <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                         <div className="project" >
-                            <img className="workimage" src={imgOne} />
+                            <img className="workimage" src={imgOne} alt='RFC'/>
                         </div>
                     </div>
                     <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                         <div className="project" >
-                            <img className="workimage" src={imgTwo} />
+                            <img className="workimage" src={imgTwo} alt='CF3' />
                         </div>
                     </div>
                     <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                         <div className="project" >
-                            <img className="workimage" src={three} />
+                            <img className="workimage" src={three} alt='mold' />
                         </div>
                     </div>
                     <div className="clear"></div>

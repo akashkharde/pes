@@ -653,7 +653,8 @@ section.section-secondary-bg {
 }
 
 .service__four {
-  background-image: url(../Assets/design/forging/fd1.JPG);
+  background-image: url(../Assets/design/forging/fd2.JPG);
+  
 }
 
 .service__five {
@@ -661,7 +662,8 @@ section.section-secondary-bg {
 }
 
 .service__six {
-  background-image: url(../Assets/design/forging/fd2.JPG);
+  background-image: url(../Assets/design/mhe/mhe2.jpg)
+
 }
 
 .service__seven {
@@ -676,6 +678,9 @@ section.section-secondary-bg {
   background-image: url(../Assets/design/cadDrafting//cad1.png);
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
 .service-img {
   width: 40px;
   height: 40px;
@@ -1885,4 +1890,8 @@ img.imgabout {
 .section-secondary-bg_ {
   margin-bottom: 30px;
 
+}
+
+.nextedUL {
+  margin-bottom: 0;
 }

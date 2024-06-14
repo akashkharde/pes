@@ -303,21 +303,13 @@ export default function WorkContainer(props) {
                                             <img className="workimage" alt="WorkImg" src={pac2} />
                                         </div>
                                     </div>
-                                    <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
-                                        <div className="project" >
-                                            <img className="workimage" alt="WorkImg" src={pac3} />
-                                        </div>
-                                    </div>
+                                  
                                     <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                                         <div className="project" >
                                             <img className="workimage" alt="WorkImg" src={pac4} />
                                         </div>
                                     </div>
-                                    <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
-                                        <div className="project" >
-                                            <img className="workimage" alt="WorkImg" src={pac5} />
-                                        </div>
-                                    </div>
+                                  
                                     <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                                         <div className="project" >
                                             <img className="workimage" alt="WorkImg" src={pac6} />

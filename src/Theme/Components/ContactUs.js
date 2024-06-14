@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Title from '../Components/Common/Title'
 import ContactPage from './Subcomponents/ContactPage';
 import img from '../Assets/images/about-header.png';
@@ -21,7 +21,7 @@ function ContactUs() {
   return (
     <div className="pinnac" >
           <div className="about_img_main">
-          <img src={img} />
+          <img src={img} alt='contact us' />
           </div>
           <section title="PNAQ Contact Us">
             <Title textone={"Lest's Connect Togethor"} />
