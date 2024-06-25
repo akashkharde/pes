@@ -16,157 +16,158 @@ export default function ServicesList() {
             <div className="container">
                 <div className="row">
 
-                    <div className="service   col-sm-12 col-md-6 col-lg-4 service__one" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
-                        <div className="service-box"  >
+                    <div className="service col-sm-12 col-md-6 col-lg-4 service__one" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
+                        <div className="service-box">
                             <div className="service-img">
-                                <bs.BsFillGearFill />
+                                <bs.BsFillGearFill className="servicesIcon" />
                             </div>
                             <div className="service-title">
-                                FIXTURE DESIGN
+                                Fixture Design
                             </div>
                             <div className="service-content">
                                 <li>
-                                    Welding fixtures.
+                                    Welding Fixtures
                                     <ul className="nextedUL">
-                                        <li>BIW fixture design.</li>
-                                        <li>Manual welding fixtures.</li>
-                                        <li>Heavy fabrication welding fixtures.</li>
+                                        <li>BIW Fixture Design</li>
+                                        <li>Manual Welding Fixtures</li>
+                                        <li>Heavy Fabrication Welding Fixtures</li>
                                     </ul>
                                 </li>
-                                <li> Machining fixtures. </li>
-                                <li> Assembly checking fixtures.</li>
-                                <li> Panel checkers.</li>
-                                <li> Plastic product checking gauges.</li>
-
+                                <li> Machining Fixtures </li>
+                                <li> Assembly Checking Fixtures</li>
+                                <li> Panel Checkers</li>
+                                <li> Plastic Product Checking Gauges</li>
                             </div>
                         </div>
                     </div>
 
-                    <div className="service  col-sm-12 col-md-6 col-lg-4 service__two" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
+                    <div className="service col-sm-12 col-md-6 col-lg-4 service__two" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
                         <div className="service-box">
                             <div className="service-img">
-                                <gi.GiGears />
+                                <gi.GiGears className="servicesIcon" />
                             </div>
                             <div className="service-title">
-                                PRESS TOOL DESIGN
-                            </div>
-                                <div className="service-content">
-                                    <li>Blanking tool. </li>
-                                    <li>Parting off tool. </li>
-                                    <li> Forming tool</li>
-                                    <li> Piercing tool.</li>
-                                    <li> Trimming tool.</li>
-                                    <li>Drawing tool. </li>
-                                    <li>Cut off tool. </li>
-                                    <li> Shaving tool.</li>
-                                    <li> Progressive tool.</li>
-                                </div>
-                        </div>
-                    </div>
-
-                    <div className="service col-sm-12 col-md-6 col-lg-4 service__four" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
-                        <div className="service-box">
-                            <div className="service-img">
-                                <fi.FiPackage />
-                            </div>
-                            <div className="service-title">
-                                FORGING
+                                Press Tool Design
                             </div>
                             <div className="service-content">
-                                <li>Forging tool for press.</li>
-                                <li>Forging tool for upsetter.</li>
-                                <li>Forging tool for hammer.</li>
-                                <li>Forging tool for screw press.</li>
-
+                                <li>Blanking Tool</li>
+                                <li>Parting Off Tool</li>
+                                <li>Forming Tool</li>
+                                <li>Piercing Tool</li>
+                                <li>Trimming Tool</li>
+                                <li>Drawing Tool</li>
+                                <li>Cut Off Tool</li>
+                                <li>Shaving Tool</li>
+                                <li>Progressive Tool</li>
                             </div>
                         </div>
                     </div>
 
-                    
-                    <div className="service  col-sm-12 col-md-6 col-lg-4 service__five" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
+                    <div className="service col-sm-12 col-md-6 col-lg-4 service__four" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
                         <div className="service-box">
                             <div className="service-img">
-                                <tb.TbPackages />
+                                <fi.FiPackage className="servicesIcon" />
                             </div>
                             <div className="service-title">
-                                PACKAGING DESIGN
+                                Forging
                             </div>
                             <div className="service-content">
-                                <li>Corrugated boxes. </li>
-                                <li>Wooden crates. </li>
-                                <li> Customized packaging.</li>
-                                <li>Packaging detailing. </li>
+                                <li>Forging Tool For Press</li>
+                                <li>Forging Tool For Upsetter</li>
+                                <li>Forging Tool For Hammer</li>
+                                <li>Forging Tool For Screw Press</li>
                             </div>
                         </div>
                     </div>
-                    <div className="service col-sm-12 col-md-6 col-lg-4 service__six" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
+
+                    <div className="service col-sm-12 col-md-6 col-lg-4 service__five" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
                         <div className="service-box">
                             <div className="service-img">
-                                <fi.FiPackage />
+                                <tb.TbPackages className="servicesIcon" />
                             </div>
                             <div className="service-title">
-                                MATERIAL HANDELING EQUIPMENTS
+                                Packaging Design
                             </div>
                             <div className="service-content">
-                                <li>Trolleys.</li>
-                                <li>Conveyors.</li>
-                                <li>Pallets.</li>
-                                <li>Bins.</li>
+                                <li>Corrugated Boxes</li>
+                                <li>Wooden Crates</li>
+                                <li>Customized Packaging</li>
+                                <li>Packaging Detailing</li>
                             </div>
                         </div>
                     </div>
-                    <div className="service col-sm-12 col-md-6 col-lg-4 service__seven" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
+
+                    <div className="service col-sm-12 col-md-6 col-lg-4 service__six" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
                         <div className="service-box">
                             <div className="service-img">
-                                <fi.FiPackage />
+                                <fi.FiPackage className="servicesIcon"  />
+                            </div>
+                            <div className="service-title">
+                                Material Handling Equipments
+                            </div>
+                            <div className="service-content">
+                                <li>Trolleys</li>
+                                <li>Conveyors</li>
+                                <li>Pallets</li>
+                                <li>Bins</li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="service col-sm-12 col-md-6 col-lg-4 service__seven" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
+                        <div className="service-box">
+                            <div className="service-img">
+                                <fi.FiPackage className="servicesIcon" />
                             </div>
                             <div className="service-title">
                                 SPM
                             </div>
                             <div className="service-content">
-                                <li> Srewing SPM.</li>
-                                <li>  Pressing SPM. </li>
-                                <li>  Drilling SPM.</li>
-                                <li>  Reveting SPM. </li>
-                                <li>  Spring Loading SPM. </li>
-                                <li>  Bolt Clinching SPM. </li>
-                                <li>  Seam Welding SPM.  </li>
+                                <li>Screwing SPM</li>
+                                <li>Pressing SPM</li>
+                                <li>Drilling SPM</li>
+                                <li>Riveting SPM</li>
+                                <li>Spring Loading SPM</li>
+                                <li>Bolt Clinching SPM</li>
+                                <li>Seam Welding SPM</li>
                             </div>
                         </div>
                     </div>
-                    <div className="service col-sm-12 col-md-6 col-lg-4 service__eight" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
+
+                    <div className="service col-sm-12 col-md-6 col-lg-4 service__eight" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
                         <div className="service-box">
                             <div className="service-img">
-                                <fi.FiPackage />
+                                <fi.FiPackage className="servicesIcon" />
                             </div>
                             <div className="service-title">
-                                2D TO 3D CONVERSION
+                                2D To 3D Conversion
                             </div>
                             <div className="service-content">
-                                <li>Prototype.</li>
-                                <li>Reverse engineering.                                </li>
-                                <li>Product design.                                </li>
-                                <li>Custom solutions.</li>
+                                <li>Prototype</li>
+                                <li>Reverse Engineering</li>
+                                <li>Product Design</li>
+                                <li>Custom Solutions</li>
                             </div>
                         </div>
                     </div>
-                    <div className="service col-sm-12 col-md-6 col-lg-4 service__nine" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }} >
+
+                    <div className="service col-sm-12 col-md-6 col-lg-4 service__nine" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600" style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
                         <div className="service-box">
                             <div className="service-img">
-                                <fi.FiPackage />
+                                <fi.FiPackage className="servicesIcon" />
                             </div>
                             <div className="service-title">
-                                CAD DRAFTING AND DESIGN
+                                CAD Drafting And Design
                             </div>
                             <div className="service-content">
-                                <li>Manufecturing cad detailing.</li>
-                                <li>Steel structure detailing.</li>
-                                <li>Product detailing.</li>
-                                <li>Custom solutions.</li>
+                                <li>Manufacturing CAD Detailing</li>
+                                <li>Steel Structure Detailing</li>
+                                <li>Product Detailing</li>
+                                <li>Custom Solutions</li>
                             </div>
                         </div>
                     </div>
-               
+
 
                     <div className="clear"></div>
                 </div>

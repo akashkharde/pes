@@ -4,9 +4,9 @@ import * as Bs from "react-icons/bs";
 import * as Ti from "react-icons/ti";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
-import img from '../../Assets/images/location.png';
-import imgOne from '../../Assets/images/mail.png';
-import imgTwo from '../../Assets/images/assist.png';
+import img from '../../Assets/images/location.webp';
+import imgOne from '../../Assets/images/mail.webp';
+import imgTwo from '../../Assets/images/assist.webp';
 
 
 
@@ -16,10 +16,13 @@ export default function ContactPage() {
     const options = [
         { op: "FIXTURE DESIGN" },
         { op: "PRESS TOOL DESIGN" },
-        { op: "FORGINE TOOL DESIGN" },
+        { op: "FORGIN TOOL DESIGN" },
         { op: "PRODUCT DESIGN" },
-        { op: "MOLD DESIGN " },
         { op: "PACKAGING DESIGN" },
+        { op: "MATERIAL HANDELING EQUIPMENT" },
+        { op: "SPM" },
+        { op: "2D TO 3D CONVERSION" },
+        { op: "CAD DRAFTING AND DESIGN" },
         { op: "OTHERS" },
     ]
     const [isDropdownOpen, setisDropdownOpen] = useState(false);

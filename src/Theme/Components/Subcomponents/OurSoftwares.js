@@ -9,7 +9,7 @@ export default function OurSoftwares() {
       >
         <div className="pixie-exp exp1">
           <div className="experience-text pb-3 ">
-            CREO Mechanica, part of the PTC Creo suite, is a robust mechanical design software. It empowers engineers with advanced tools for parametric 3D modeling, simulation, and analysis, facilitating the creation of innovative and optimized mechanical designs.
+            CREO Mechanical, part of the PTC Creo suite, is a robust mechanical design software. It empowers engineers with advanced tools for parametric 3D modeling, simulation, and analysis, facilitating the creation of innovative and optimized mechanical designs.
           </div>
           <div className="experience-number">CREO</div>
         </div>
@@ -42,7 +42,7 @@ export default function OurSoftwares() {
         <div className="pixie-exp exp2">
           <div className="experience-number pb-3">CREO</div>
           <div className="experience-text">
-            CREO Mechanica, part of the PTC Creo suite, is a robust mechanical design software. It empowers engineers with advanced tools for parametric 3D modeling, simulation, and analysis, facilitating the creation of innovative and optimized mechanical designs.
+            CREO Mechanical, part of the PTC Creo suite, is a robust mechanical design software. It empowers engineers with advanced tools for parametric 3D modeling, simulation, and analysis, facilitating the creation of innovative and optimized mechanical designs.
           </div>
         </div>
         <div className="pixie-exp exp3">

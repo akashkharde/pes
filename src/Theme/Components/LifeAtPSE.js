@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import img from '../Assets/images/life-at-pixie-header.png';
+import img from '../Assets/images/life-at-pixie-header.webp';
 import LifeAtPixieHeader from './Subcomponents/LifeAtPSEHeader';
 import OurSoftwares from './Subcomponents/OurSoftwares';
 import Title from './Common/Title';

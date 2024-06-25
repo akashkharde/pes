@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Title from '../Components/Common/Title'
 import ContactPage from './Subcomponents/ContactPage';
-import img from '../Assets/images/about-header.png';
+import img from '../Assets/images/about-header.webp';
 import AOS from 'aos';
 
 

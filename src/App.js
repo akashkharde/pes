@@ -1,25 +1,25 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import "../src/Theme/styles/globals.css";
+import "../src/Theme/styles/Home.module.css";
+import "../src/Theme/styles/responsive.css";
+import "../src/Theme/styles/testimonial.css";
+import Header from './Theme/Components/Common/Header';
+import Footer from './Theme/Components/Common/Footer';
+import Loader from './Theme/Components/Common/Loader';
+
+// Directly import all components
 import Home from './Theme/Components/Home';
 import About from './Theme/Components/About';
 import Services from './Theme/Components/Services';
 import Work from './Theme/Components/Work';
 import ContactUs from './Theme/Components/ContactUs';
-import "../src/Theme/styles/globals.css"
-import "../src/Theme/styles/Home.module.css"
-import "../src/Theme/styles/responsive.css";
-import "../src/Theme/styles/testimonial.css";
-import Header from './Theme/Components/Common/Header';
-import Footer from './Theme/Components/Common/Footer';
 import LifeAtPSE from './Theme/Components/LifeAtPSE';
 import WhyUs from './Theme/Components/WhyUs';
-
-
+import PageNotFound from './Theme/Components/Subcomponents/PageNotFound';
 
 function App() {
-  
-
   return (
     <div className="app">
       <BrowserRouter>
@@ -32,6 +32,7 @@ function App() {
           <Route exact path='/lifeAtPSE' element={<LifeAtPSE />} />
           <Route exact path='/why-us' element={<WhyUs />} />
           <Route exact path='/contact' element={<ContactUs />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -1,4 +1,4 @@
-import logo from '../../Assets/images/finalLogoBack.png'
+import logo from '../../Assets/images/finalLogoBack.webp'
 import { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -26,7 +26,7 @@ export default function HomeSlider() {
     return (
         <>
             <div data-aos="zoom-out-right" className="" >
-                <Carousel styles={styles} infiniteLoop={true} swipeable={false}  showIndicators = {false} stopOnHover = {false} autoPlay={true} preventMovementUntilSwipeScrollTolerance={false} swipeScrollTolerance={10} >
+                <Carousel styles={styles} infiniteLoop={true} swipeable={false}  showIndicators = {false} stopOnHover = {false} autoPlay={true} preventMovementUntilSwipeScrollTolerance={false}  >
                     
 
                     <div>

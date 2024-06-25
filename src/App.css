@@ -1,5 +1,150 @@
 body {
-    scroll-behavior: smooth;
-    user-select: none;
-    margin: 0;
+  scroll-behavior: smooth;
+  user-select: none;
+  margin: 0;
+}
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
   }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loaderDiv {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flowchart {
+  display: flex;
+  height: 350px;
+}
+
+.flow-col {
+  border: 1px solid black;
+  width: 20%;
+}
+
+.flowTextBox {
+  padding: 5px 10px;
+  border: 3px solid black;
+  text-align: center;
+}
+
+.flow-col-one,
+.flow-col-four {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.flow-col-one::after ,.flow-col-four::after  {
+  position: absolute;
+  content: "";
+  height: 300px;
+  width: 3px;
+  background-color: red;
+  bottom: 36px;
+}
+
+.flowTextBox-two,
+.flowTextBox-five {
+  transform: rotate(90deg);
+}
+.flowTextBox-two::before {
+  position: absolute;
+  content: "";
+  height: 207px;
+  width: 3px;
+  background-color: red;
+  left: 103px;
+  top: 33px;
+}
+
+.flowTextBox-two::after {
+  position: absolute;
+  content: "";
+  height: 98px;
+  width: 3px;
+  background-color: red;
+  left: 102px;
+  top: -99px;
+}
+
+.flowTextBox-three::after, .flowTextBox-four::after {
+  position: absolute;
+  content: "";
+  height: 143px;
+  width: 3px;
+  background-color: red;
+  bottom: 36px;
+  left: 78px;
+}
+
+.flow-col.flow-col-three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flowTextThreeFour {
+  display: flex;
+  text-wrap: nowrap;
+  gap: 81px;
+  position: relative;
+}
+
+/* .flow-col-four {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+} */

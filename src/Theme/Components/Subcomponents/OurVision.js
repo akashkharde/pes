@@ -6,8 +6,8 @@ export default function OurVision() {
         <div>
             <div className="our-vision-title" data-aos="flip-down" data-aos-easing="linear" data-aos-duration="600">Inspiring Change through Our Vision</div>
             <div className="container">
-                <div className="row">
-                    <div className="col-lg-4 col-md-6 col-sm-12">
+                <div className="row mb-2">
+                    <div className="col-lg-4 col-md-6 col-sm-12 our-vision-col">
                         <div className="our-vision-tab" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                             <div className="vision-number">1</div>
                             <div className="vision-title">Innovation</div>
@@ -16,7 +16,7 @@ export default function OurVision() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12">
+                    <div className="col-lg-4 col-md-6 col-sm-12 our-vision-col">
                         <div className="our-vision-tab" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                             <div className="vision-number">2</div>
                             <div className="vision-title">Sustainability</div>
@@ -25,7 +25,7 @@ export default function OurVision() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12">
+                    <div className="col-lg-4 col-md-6 col-sm-12 our-vision-col">
                         <div className="our-vision-tab" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                             <div className="vision-number">3</div>
                             <div className="vision-title">Global Impact</div>
@@ -38,7 +38,7 @@ export default function OurVision() {
 
                 <div className="our-vision-tabs">
                     <div className="row">
-                        <div className="col-lg-4 col-md-6 col-sm-12">
+                        <div className="col-lg-4 col-md-6 col-sm-12 our-vision-col">
                             <div className="our-vision-tab" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                                 <div className="vision-number">4</div>
                                 <div className="vision-title">Why Our Vision Matters</div>
@@ -47,7 +47,7 @@ export default function OurVision() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-12">
+                        <div className="col-lg-4 col-md-6 col-sm-12 our-vision-col">
                             <div className="our-vision-tab" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
                                 <div className="vision-number">5</div>
                                 <div className="vision-title">Our Team's Role</div>
@@ -56,6 +56,18 @@ export default function OurVision() {
                                 </div>
                             </div>
                         </div>
+
+                        <div className="col-lg-4 col-md-6 col-sm-12 our-vision-col">
+                            <div className="our-vision-tab" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="600">
+                                <div className="vision-number">6</div>
+                                <div className="vision-title">Honesty and Integrity</div>
+                                <div className="vision-content">
+                                Upholding the highest professional ethical standards, treating co-workers, clients, and prospective clients with respect and kindness, and communicating openly.
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                     <div className="clear"></div>
                 </div>

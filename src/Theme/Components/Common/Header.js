@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import logo from '../../Assets/images/finalLogo.jpg'
+import logo from '../../Assets/images/finalLogo.webp'
 
 function Header() {
   const location = useLocation();

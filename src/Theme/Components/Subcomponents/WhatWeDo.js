@@ -1,4 +1,4 @@
-import img from '../../Assets/images/what-we-do-icon.png'
+import img from '../../Assets/images/what-we-do-icon.webp'
 export default function WhatWeDo(){ 
     return(
         <div className="whatwedo-inner-page-container">

@@ -1,10 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import AboutSectionOne from './Subcomponents/AboutSectionOne';
 import OurVision from './Subcomponents/OurVision';
-import WhyChooseUs from './Subcomponents/WhyChooseUs';
 import Title from '../Components/Common/Title';
-import img from '../Assets/images/about-rectangle.webp'
-import { useLocation } from 'react-router-dom';
+import img from '../Assets/images/about-header.webp'
 import AOS from 'aos';
 
 
@@ -29,8 +27,8 @@ useEffect(() => {
         <Title textone={"About Us"} />
         <AboutSectionOne />
       </section>
-      <section className="section-secondary-bg_" title="PNAQ Our Vision">
-        <Title textone={"Our Vision"} />
+      <section className="section-secondary-bg_" title="PNAQ Our Vision & Value">
+        <Title textone={"Our Vision & Value"} />
         <OurVision />
       </section>
     </div>

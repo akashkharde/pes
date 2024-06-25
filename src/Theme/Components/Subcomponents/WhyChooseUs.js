@@ -1,5 +1,11 @@
-import img from '../../Assets/images/why-choose-us-profile.png'
+import Aos from 'aos';
+import img from '../../Assets/images/why-choose-us-profile.webp'
+import { useEffect } from 'react';
 export default function WhyChooseUs(){
+
+    useEffect(() => {
+        Aos.init({ delay: 300 })
+      }, []);
 
     return(
         <div>

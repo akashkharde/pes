@@ -1,5 +1,5 @@
 import {Link, useNavigate} from 'react-router-dom';
-import img from '../../Assets/images/about-rectangle.png';
+import img from '../../Assets/images/about-rectangle.webp';
 import AOS from 'aos'
 import { useEffect } from 'react';
 export default function HomeAbout() {
@@ -29,7 +29,7 @@ export default function HomeAbout() {
                             We offer a wide range of designing services. Our team of experienced designers and
                             engineers are equipped with the latest tools and technologies
                             to help you create innovative and cost-effective designs that
-                            meet our business requirements.
+                            meet our collective business requirements.
                         </div>
                         <div className="about-right-button">
                             <span onClick={handleNavigate}>Detail</span>

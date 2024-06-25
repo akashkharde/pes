@@ -11,7 +11,7 @@ export default function HomeWork() {
         navigate('/work', { state: { no: val } });
     }
     return (
-        <div className='work-inner-page-container'>
+        <div className='work-inner-page-container '>
             <div className="container">
 
                 <div className="row">
