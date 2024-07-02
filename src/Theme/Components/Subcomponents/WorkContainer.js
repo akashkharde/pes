@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import * as Bs from 'react-icons/bs'
-import CF1 from "../../Assets/design/CF1.1.jpg";
-import CF2 from "../../Assets/design/CF2.1.jpg";
-import CF3 from "../../Assets/design/CF3.1.jpg"
 
 import FD11 from "../../Assets/design/fixture/CHASIS01.jpg"
 import FD12 from "../../Assets/design/fixture/DOORSASH ROBOTICCELL.jpg"
@@ -11,11 +8,6 @@ import FD13 from "../../Assets/design/fixture/SPOTWELDING-01.jpg"
 import FD14 from "../../Assets/design/fixture/SPOTWELDING-02.jpg"
 import FD15 from "../../Assets/design/fixture/SPOTWELDING-03.jpg"
 import FD16 from "../../Assets/design/fixture/SPOTWELDING-04.jpg"
-// import FD7 from "../../Assets/design/fixture/"
-
-
-
-
 
 import PT1 from "../../Assets/design/PT1.jpg";
 import PT2 from "../../Assets/design/PT2.jpg";
@@ -41,9 +33,7 @@ import MD4 from "../../Assets/design/mold4.1.jpg";
 
 import pac1 from "../../Assets/design/pac1.jpeg";
 import pac2 from "../../Assets/design/pac2.jpeg";
-import pac3 from "../../Assets/design/pac3.jpeg";
 import pac4 from "../../Assets/design/packagin/TPI005.JPG";
-import pac5 from "../../Assets/design/pac5.jpeg"
 import pac6 from "../../Assets/design/pac6.jpeg"
 import pac7 from "../../Assets/design/packagin/TPI001.JPG"
 import pac8 from "../../Assets/design/packagin/TPI006.JPG"

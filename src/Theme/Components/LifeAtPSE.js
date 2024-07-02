@@ -4,6 +4,7 @@ import LifeAtPixieHeader from './Subcomponents/LifeAtPSEHeader';
 import OurSoftwares from './Subcomponents/OurSoftwares';
 import Title from './Common/Title';
 import AOS from 'aos';
+import MetaTags from './Common/MetaTags';
 
 function LifeAtPSE() {
     useEffect(() => {
@@ -19,6 +20,12 @@ function LifeAtPSE() {
       }, [shouldScrollToTop]);
     return (
         <div className="pinnac">
+            <MetaTags
+                title="Life at PNAQ - Empowering Innovation and Collaboration"
+                description="Discover the vibrant and collaborative work environment at PNAQ, where skilled professionals from diverse backgrounds come together to deliver high-quality services. Explore our commitment to work-life balance, continuous learning through training and industry events, and supportive leadership"
+                keywords="PNAQ, life at PNAQ, work-life balance, professional growth, collaborative environment, skilled professionals, industry events, training opportunities, supportive leadership, employee benefits, competitive compensation, flexible work arrangements, engineering software, CREO, Autodesk Inventor, AutoCAD Mechanical, CATIA, mechanical design software"
+                route="/life-at-pnaq"
+            />
             <img src={img} alt='life in PNAQ' />
             <section >
                 <LifeAtPixieHeader />

@@ -28,7 +28,6 @@ const WorkFlow = () => {
   }, []);
 
   useEffect(() => {
-    console.log(screenWidth);
   }, [screenWidth]);
 
   return (

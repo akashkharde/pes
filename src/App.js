@@ -7,9 +7,6 @@ import "../src/Theme/styles/responsive.css";
 import "../src/Theme/styles/testimonial.css";
 import Header from './Theme/Components/Common/Header';
 import Footer from './Theme/Components/Common/Footer';
-import Loader from './Theme/Components/Common/Loader';
-
-// Directly import all components
 import Home from './Theme/Components/Home';
 import About from './Theme/Components/About';
 import Services from './Theme/Components/Services';
@@ -29,7 +26,7 @@ function App() {
           <Route exact path='/about' element={<About />} />
           <Route exact path='/service' element={<Services />} />
           <Route exact path='/work' element={<Work />} />
-          <Route exact path='/lifeAtPSE' element={<LifeAtPSE />} />
+          <Route exact path='/life-at-pnaq' element={<LifeAtPSE />} />
           <Route exact path='/why-us' element={<WhyUs />} />
           <Route exact path='/contact' element={<ContactUs />} />
           <Route path="*" element={<PageNotFound />} />

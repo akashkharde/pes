@@ -16,7 +16,7 @@ export default function ContactPage() {
     const options = [
         { op: "FIXTURE DESIGN" },
         { op: "PRESS TOOL DESIGN" },
-        { op: "FORGIN TOOL DESIGN" },
+        { op: "FORGING TOOL DESIGN" },
         { op: "PRODUCT DESIGN" },
         { op: "PACKAGING DESIGN" },
         { op: "MATERIAL HANDELING EQUIPMENT" },
@@ -134,6 +134,10 @@ export default function ContactPage() {
         window.open(url, '_blank');
     };
 
+    const handleMailClick = () => {
+        window.location.href = 'mailto:info.pnaqengineering@gmail.com';
+    };
+
     return (
         <div className="contact-container" onClick={handleRedirect}>
             <div className="container">
@@ -167,7 +171,7 @@ export default function ContactPage() {
                                     </div>
                                     <div className="call">Phone: +91 95118 90599</div>
                                 </div>
-                                <div className="details cursor-pointer" >
+                                <div className="details cursor-pointer" onClick={handleMailClick}>
                                     <div>
                                         <img src={imgOne} alt='gmail' />
                                     </div>

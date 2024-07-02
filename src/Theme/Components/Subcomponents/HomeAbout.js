@@ -1,4 +1,4 @@
-import {Link, useNavigate} from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import img from '../../Assets/images/about-rectangle.webp';
 import AOS from 'aos'
 import { useEffect } from 'react';

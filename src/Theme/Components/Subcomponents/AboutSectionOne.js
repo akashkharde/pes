@@ -20,7 +20,7 @@ export default function AboutSectionOne() {
                         <div className="col col-lg-4 col-md-6 col-sm-12 service_" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                             <div className="service-box_">
                                 <div className="service-img_">
-                                    <bs.BsFillGearFill style={{ color: "#000" }} />
+                                    <bs.BsFillGearFill  className = "BsFillGearFill" />
                                 </div>
                                 <div className="service-title_">
                                     FIXTURE DESIGN
@@ -34,7 +34,7 @@ export default function AboutSectionOne() {
                         <div className="col-lg-4 col-md-6 col-sm-12 service_" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                             <div className="service-box_">
                                 <div className="service-img_">
-                                    <bs.BsFillGearFill style={{ color: "#000" }} />
+                                    <bs.BsFillGearFill  className = "BsFillGearFill" />
                                 </div>
                                 <div className="service-title_">
                                     FORGING TOOL DESIGN
@@ -47,20 +47,20 @@ export default function AboutSectionOne() {
                         <div className=" col-lg-4 col-md-6 col-sm-12 service_" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                             <div className="service-box_">
                                 <div className="service-img_">
-                                    <bs.BsFillGearFill style={{ color: "#000" }} />
+                                    <bs.BsFillGearFill  className = "BsFillGearFill" />
                                 </div>
                                 <div className="service-title_">
                                     PRESS TOOL DESIGN
                                 </div>
                                 <div className="service-content_">
-                                    We excel in creating press tools that streamline metalworking processes, enhancing productivity and reducing production costs.Unlock precision and efficiency in your manufacturing with PNAQ Engineering Solutions LLP expert Press Tool Design services. Our seasoned professionals specialize in creating cutting-edge designs using advanced technologies. Whether you need intricate details or robust performance, we tailor press tools to meet your unique specifications.
+                                    We excel in creating press tools that streamline metalworking processes, enhancing productivity and reducing production costs.Unlock precision and efficiency in your manufacturing with PNAQ Engineering Solutions LLP expert Press Tool Design services. Our seasoned professionals specialize in creating cutting-edge designs using advanced technologies. 
                                 </div>
                             </div>
                         </div>
                         <div className=" col-lg-4 col-md-6 col-sm-12 service_" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                             <div className="service-box_">
                                 <div className="service-img_">
-                                    <bs.BsFillGearFill style={{ color: "#000" }} />
+                                    <bs.BsFillGearFill  className = "BsFillGearFill" />
                                 </div>
                                 <div className="service-title_">
                                     PRODUCT DESIGN
@@ -73,7 +73,7 @@ export default function AboutSectionOne() {
                         <div className=" col-lg-4 col-md-6 col-sm-12 service_" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                             <div className="service-box_">
                                 <div className="service-img_">
-                                    <bs.BsFillGearFill style={{ color: "#000" }} />
+                                    <bs.BsFillGearFill  className = "BsFillGearFill" />
                                 </div>
                                 <div className="service-title_">
                                     STRUCTURAL DESIGN AND DETAILING
@@ -86,13 +86,13 @@ export default function AboutSectionOne() {
                         <div className=" col-lg-4 col-md-6 col-sm-12 service_" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                             <div className="service-box_">
                                 <div className="service-img_">
-                                    <bs.BsFillGearFill style={{ color: "#000" }} />
+                                    <bs.BsFillGearFill  className = "BsFillGearFill" />
                                 </div>
                                 <div className="service-title_">
                                     PACKAGING DESIGN
                                 </div>
                                 <div className="service-content_">
-                                    At PNAQ Engineering Solutions LLP, we specialize in delivering cutting-edge Packaging Design services that seamlessly blend creativity with functionality. Our expert team leverages their design prowess to create visually appealing and strategically crafted packaging solutions. Whether you require eye-catching product packaging or efficient logistics solutions, our designs are tailored to leave a lasting impression. We understand the importance of packaging in brand identity and product protection. Our designs not only look appealing but also ensure your products reach customers intact.
+                                    At PNAQ Engineering Solutions LLP, we specialize in delivering cutting-edge Packaging Design services that seamlessly blend creativity with functionality. Our expert team leverages their design prowess to create visually appealing and strategically crafted packaging solutions. Whether you require eye-catching product packaging or efficient logistics solutions, our designs are tailored to leave a lasting impression. We understand the importance of packaging in brand identity and product protection. 
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ export default function AboutSectionOne() {
                         <div className=" col-lg-4 col-md-6 col-sm-12 service_" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                             <div className="service-box_">
                                 <div className="service-img_">
-                                    <bs.BsFillGearFill style={{ color: "#000" }} />
+                                    <bs.BsFillGearFill  className = "BsFillGearFill" />
                                 </div>
                                 <div className="service-title_">
                                     MATERIAL HANDELING EQUIBMENT
@@ -122,7 +122,7 @@ export default function AboutSectionOne() {
                         <div className=" col-lg-4 col-md-6 col-sm-12 service_" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                             <div className="service-box_">
                                 <div className="service-img_">
-                                    <bs.BsFillGearFill style={{ color: "#000" }} />
+                                    <bs.BsFillGearFill  className = "BsFillGearFill" />
                                 </div>
                                 <div className="service-title_">
                                     SPM

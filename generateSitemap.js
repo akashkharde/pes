@@ -13,7 +13,7 @@ const routes = [
 ];
 
 const generateSitemap = async () => {
-  const sitemap = new SitemapStream({ hostname: 'https://pinnac.devitglobe.com/' });
+  const sitemap = new SitemapStream({ hostname: 'https://pnaqengg.com/' });
   routes.forEach(route => {
     sitemap.write({ url: route, changefreq: 'daily', priority: 0.8 });
   });

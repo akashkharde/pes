@@ -3,13 +3,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import HomeSlider from './Subcomponents/HomeSlider';
-import Loader from './Common/Loader';
 import CountUpComp from './Subcomponents/CountUp';
 import HomeAbout from './Subcomponents/HomeAbout';
 import Title from './Common/Title';
 import ServicesList from './Subcomponents/ServicesList';
 import HomeWork from './Subcomponents/HomeWork';
 import WorkFlow from './Subcomponents/WorkFlow';
+import MetaTags from './Common/MetaTags';
 
 function Home() {
   useEffect(() => {
@@ -27,6 +27,12 @@ function Home() {
 
   return (
     <div style={{ width: '100%' }}>
+        <MetaTags
+        title="Home Page - PNAQ Engineering Solutions LLP"
+        description="Welcome to PNAQ Engineering Solutions LLP. We offer a wide range of designing services, including fixture design, press tool design, forging design, structural design, mold design, product design, and packaging design."
+        keywords="PNAQ, Pinnaq Engineering Solutions, fixture design, press tool design, forging design, structural design, mold design, product design, packaging design"
+        route="/"
+      />
       <section>
         <HomeSlider />
       </section>

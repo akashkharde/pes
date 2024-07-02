@@ -1,5 +1,4 @@
 
-import * as TFi from "react-icons/tfi";
 import * as bs from "react-icons/bs"
 import * as gi from "react-icons/gi"
 import * as fi from "react-icons/fi";

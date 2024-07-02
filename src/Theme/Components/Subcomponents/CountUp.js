@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { FaHandshake } from "react-icons/fa";
 import CountUp from 'react-countup';
 import Title from '../Common/Title';
 import Aos from 'aos';

@@ -1,36 +1,8 @@
-/*****************************
-* PIXIE BYTEZ 
-* Developer Kirankumar
-* 10 April 2023
-*****************************/
-
-
-/* :root {
-  --primary: #0b2b6a;
-  --primarylight: #204fad;
-  --secondary: #3498db;
-  --secondarylight: #5eb3eb;
-
-  --whitefont: #cbdafa; 
-  --sectionbg: #f7fafb;
-
-  --white: #ffffff;
-  --black: #000000;
-  --danger: #e21e15;
-  --success: #1e7105;
-  --graylight: #505766;
-
-}  */
-
 :root {
-  --primary: #480d2f;
-  --primarylight: #480d2f;
-  --secondary: #000;
-  --secondarylight: #480d2f;
-
+  /* --primary: #480d2f; */
+  --primary:  #054b58;
   --whitefont: #cbdafa;
   --sectionbg: #f7fafb;
-
   --white: #ffffff;
   --black: #000000;
   --danger: #e21e15;
@@ -186,7 +158,7 @@ header {
 }
 
 .main-header {
-  padding: 5px 60px;
+  padding: 5px 30px;
   background-color: var(--white);
   position: fixed;
   width: 100%;
@@ -246,11 +218,11 @@ header {
 }
 
 .header-menu ul li.contact-us-btn:hover {
-  background-color: var(--primarylight);
+  background-color: var( --primary);
 }
 
 .footer-div {
-  background-color:var(--sectionbg);
+  background-color:#c3eed4  ;
   color: #000;
   padding: 20px 0 1px 0;
   font-family: ui-monospace, sans-serif;
@@ -311,8 +283,8 @@ nav.col.nav_col_main {
 
 
 .footer-title {
-  font-size: 20px;
-  color: var(--white);
+  font-size: 24px;
+  color: #000;
   padding-left: 50px;
   padding-top: 30px;
 }
@@ -345,7 +317,7 @@ ul.footer-quick-links li {
 }
 
 .footer-first {
-  border-bottom: 1px solid var(--primarylight);
+  border-bottom: 1px solid var( --primary);
   padding-bottom: 30px;
 }
 
@@ -353,7 +325,7 @@ ul.footer-quick-links li {
   justify-content: space-between;
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid var(--primarylight);
+  border-bottom: 1px solid var( --primary);
   padding: 10px 100px;
 }
 
@@ -429,7 +401,7 @@ ul.footer-quick-links li {
 }
 
 .section-title .text-two {
-  color: var(--primarylight);
+  color: var( --primary);
 }
 
 .back-line-left {
@@ -690,7 +662,7 @@ section.section-secondary-bg {
 .service-img {
   width: 40px;
   height: 40px;
-  background-color: var(--secondarylight);
+  background-color: var( --primary);
   text-align: center;
   line-height: 35px;
   font-size: 21px;
@@ -735,7 +707,7 @@ section.section-secondary-bg {
 
 .option_div {
   width: 96%;
-  border: 1px solid var(--secondarylight);
+  border: 1px solid var( --primary);
   border-radius: 20px;
   padding: 10px 20px 10px 20px;
   height: 40px;
@@ -793,9 +765,9 @@ section.section-secondary-bg {
   flex-direction: column;
   padding: 0px;
   margin: 0px 45px;
-  border-bottom: 1px solid var(--secondarylight);
-  border-left: 1px solid var(--secondarylight);
-  border-right: 1px solid var(--secondarylight);
+  border-bottom: 1px solid var( --primary);
+  border-left: 1px solid var( --primary);
+  border-right: 1px solid var( --primary);
   border-radius: 0px 0px 20px 20px;
   padding: 10px 20px 10px 20px;
   line-height: 2rem;
@@ -1009,7 +981,7 @@ section {
 }
 
 .blog-date {
-  color: var(--secondary);
+  color: #000;
   font-family: ui-monospace, sans-serif;
   ;
 }
@@ -1025,14 +997,14 @@ section {
 }
 
 .blog-readmore a {
-  color: var(--secondary);
+  color: #000;
   font-family: ui-monospace, sans-serif;
   ;
 }
 
 .blog-detail-img {
   text-align: center;
-  background-color: var(--primarylight);
+  background-color: var( --primary);
 }
 
 .blog-detail-img img {
@@ -1131,7 +1103,7 @@ section {
 
 .contact-inputs .inputs input {
   padding: 10px 20px;
-  border: 1px solid var(--secondarylight);
+  border: 1px solid var( --primary);
   border-radius: 50px;
   width: 45%;
   margin-right: 5%;
@@ -1140,9 +1112,9 @@ section {
 
 .contact-inputs .inputs textarea {
   width: 96%;
-  border-bottom: 1px solid var(--secondarylight);
-  border-left: 1px solid var(--secondarylight);
-  border-right: 1px solid var(--secondarylight);
+  border-bottom: 1px solid var( --primary);
+  border-left: 1px solid var( --primary);
+  border-right: 1px solid var( --primary);
   padding: 10px 20px 10px 20px;
   height: 100px;
   border-radius: 0px 0px 20px 20px;
@@ -1150,9 +1122,9 @@ section {
 }
 
 .desc_textarea {
-  border-right: 1px solid var(--secondarylight);
-  border-left: 1px solid var(--secondarylight);
-  border-top: 1px solid var(--secondarylight);
+  border-right: 1px solid var( --primary);
+  border-left: 1px solid var( --primary);
+  border-top: 1px solid var( --primary);
   width: 96%;
   border-radius: 20px 20px 0px 0px;
   padding: 10px 20px
@@ -1191,6 +1163,7 @@ section {
 
 .whatwedo-inner-page-container {
   padding: 10px 0;
+  padding-bottom: 56px;
 }
 
 .what-we-do-img {
@@ -1224,7 +1197,7 @@ section {
   float: left;
   width: 25%;
   text-align: center;
-  border-right: 1px solid var(--primarylight);
+  border-right: 1px solid var( --primary);
 }
 
 .services-footer-numbers.last-child {
@@ -1234,14 +1207,14 @@ section {
 .service-footer-title {
   text-transform: uppercase;
   font-family: 'nunitosemibold';
-  color: var(--primarylight);
+  color: var( --primary);
 }
 
 .service-footer-number {
   text-transform: uppercase;
   font-family: ui-monospace, sans-serif;
   ;
-  color: var(--primarylight);
+  color: var( --primary);
   font-size: 25px;
 }
 
@@ -1398,7 +1371,7 @@ p.why-choose-us_p {
 .service_::before {
   content: "";
   position: absolute;
-  background: var(--secondarylight);
+  background: var( --primary);
   right: -60px;
   top: -40px;
   width: 100px;
@@ -1409,7 +1382,7 @@ p.why-choose-us_p {
 }
 
 .service_:hover::before {
-  background: var(--primarylight);
+  background: var( --primary);
   right: 0;
   top: 0;
   width: 100%;
@@ -1419,6 +1392,14 @@ p.why-choose-us_p {
 
 .service_:hover {
   color: var(--white);
+}
+
+.service_ :hover .BsFillGearFill {
+  color: #fff;
+}
+
+.BsFillGearFill {
+  color: var(--primary);
 }
 
 
@@ -1459,7 +1440,7 @@ p.why-choose-us_p {
   font-size: 50px;
   font-family: ui-monospace, sans-serif;
   ;
-  color: var(--secondarylight);
+  color: var( --primary);
   opacity: 0.2;
 }
 
@@ -1555,12 +1536,16 @@ p.why-choose-us_p {
   position: relative;
 }
 
-.life-at-pixie-main-image img {
-  /* width: 60%; */
-}
-
 .life-at-pixie-header-container {
   margin: 100px auto 30px auto;
+}
+
+.closeSideBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
 }
 
 .life-at-pixie-small-image {
@@ -1898,20 +1883,18 @@ img.imgabout {
 }
 
 
-.col-lg-4.col-md-6.col-sm-12.our-vision-col {
-  border: 1px solid #cec9c9;
-  margin: 7px;
-  width: 32%;
+.col-lg-4.col-md-6.col-sm-12 {
   background-color: var(--white);
-  border-radius: 10px;
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   margin-bottom: 20px;
-
 }
 
-
-.our-vision-tab {
-  padding: 15px 10px;
-  margin: 1%;
-  position: relative;
+.our-vision-tab-new {
+  border: 1px solid #cec9c9;
+  border-radius: 10px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  padding: 15px 10px 10px 10px;
+  height: 100%;
+}
+.rowGap {
+  row-gap: 15px;
 }

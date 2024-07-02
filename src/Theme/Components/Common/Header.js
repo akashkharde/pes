@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import logo from '../../Assets/images/finalLogo.webp'
 
 function Header() {
@@ -16,9 +16,16 @@ function Header() {
   useEffect(() =>{
       setIsChecked(false)
   },[path])
+
+  function hadleSidebarClose () {
+    setIsChecked(false)
+  } 
   return (
     <header>
       <div className='main-header'>
+        {
+          isChecked && <div className='closeSideBar' onClick={hadleSidebarClose}></div>
+        }
         <div className='container-fluid'>
           <div className='float-start'>
             <div className='main-logo'>
@@ -55,8 +62,8 @@ function Header() {
                   <span className="header_icon_name">Work</span>
                 </button>
               </Link>
-              <Link to={'/lifeAtPSE'}>
-                <button className={` col header_icon_sub_div ${path === "/lifeAtPSE" ? 'active' : ''}`} >
+              <Link to={'/life-at-pnaq'}>
+                <button className={` col header_icon_sub_div ${path === "/life-at-pnaq" ? 'active' : ''}`} >
                   <span className="header_icon_name">Life At PNAQ</span>
                 </button>
               </Link>

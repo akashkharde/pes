@@ -20,17 +20,21 @@ export default function Footer() {
         let phoneNumber = 919511890599;
         const url = `https://wa.me/${phoneNumber}`;
         window.open(url, '_blank');
-      };
+    };
+
+    const handleMailClick = () => {
+        window.location.href = 'mailto:info.pnaqengineering@gmail.com';
+    };
     return (
         <footer className="footer-div">
             <div className="container footer-first">
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-12 footer_logo_300">
                         <div className="footer-logo">
-                            <img src={logo} alt="PNAQ logo"   />
+                            <img src={logo} alt="PNAQ logo" />
                         </div>
                         <div className="footer-about">
-                        Specializing in mechanical design solutions to empower businesses in a competitive market. Our passion for innovation and commitment to excellence drive us to deliver tailored design services that meet your specific needs.
+                            Specializing in mechanical design solutions to empower businesses in a competitive market. Our passion for innovation and commitment to excellence drive us to deliver tailored design services that meet your specific needs.
                         </div>
                     </div>
 
@@ -47,21 +51,21 @@ export default function Footer() {
                                 </div>
                                 <div className="clear"></div>
                             </div>
-                            <div className="cursor-pointer mb-2" onClick={handleClick}  title="chat on Whatsapp" > 
+                            <div className="cursor-pointer mb-2" onClick={handleClick} title="chat on Whatsapp" >
                                 <div className="footer-contact-info cursor-pointer"  >
-                                <span><FaPhoneAlt className='f__img'  /></span>
+                                    <span><FaPhoneAlt className='f__img' /></span>
                                 </div>
                                 <div className="float-start p-1">
                                     + 91 95118 90599
                                 </div>
                                 <div className="clear"></div>
                             </div>
-                            <div className="mb-2">
+                            <div className=" cursor-pointer mb-2" onClick={handleMailClick} title="Mail" >
                                 <div className="footer-contact-info">
-                                <span><IoIosMail className='f__img'  /></span>
+                                    <span><IoIosMail className='f__img' /></span>
                                 </div>
                                 <div className="float-start p-1">
-                                info.pnaqengineering@gmail.com
+                                    info.pnaqengineering@gmail.com
                                 </div>
                             </div>
                         </div>
